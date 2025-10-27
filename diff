@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A Verdade ou a Morte – Universo oficial de Felipe Mello</title>
   <link rel="canonical" href="https://averdadeouamorte.github.io/">
+  <meta name="theme-color" content="#0f3b45">
+  <meta property="og:site_name" content="A Verdade ou a Morte">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
   <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1, max-snippet:-1">
   <meta name="description" content="Thriller filosófico de Felipe Mello num Brasil distópico onde a verdade é obrigatória e a mentira, sentença. Explore o universo de A Verdade ou a Morte: livro, ideias e fragmentos.">
-  <meta name="keywords" content="A Verdade ou a Morte, Felipe Mello, livro A Verdade ou a Morte, romance de Felipe Mello, livro brasileiro distópico, thriller filosófico, ficção contemporânea brasileira, literatura distópica nacional, romance psicológico moderno, livro sobre verdade e mentira, verdade e moralidade, ética e sobrevivência, Michel Foucault verdade, filosofia da verdade, o poder da mentira, moral em tempos de IA, o preço da sinceridade, sociedade de controle, justiça e memória, a verdade como sentença, Brasil distópico, futuro autoritário, inteligência artificial e governo, ficção tecnológica, distopia brasileira, sistema de vigilância, mundo controlado por IA, ficção moral futurista, drama psicológico, sociedade da verdade, livros para quem gosta de Black Mirror, livros como Admirável Mundo Novo, livros com crítica social, livros que fazem pensar, romances filosóficos brasileiros, livros de suspense psicológico, autores brasileiros contemporâneos, melhores thrillers nacionais, literatura reflexiva moderna, A Verdade ou a Morte book, Felipe Mello author, Brazilian dystopian novel, philosophical thriller, truth and morality, artificial intelligence and ethics, moral survival fiction, dystopian future Brazil, truth as a sentence, literary psychological thriller">
+  <meta name="keywords" content="A Verdade ou a Morte, Felipe Mello, livro A Verdade ou a Morte, romance de Felipe Mello, livro brasileiro distópico, livro, thriller filosófico, ficção contemporânea brasileira, literatura distópica nacional, romance psicológico moderno, livro sobre verdade e mentira, verdade e moralidade, ética e sobrevivência, Michel Foucault verdade, filosofia da verdade, o poder da mentira, moral em tempos de IA, o preço da sinceridade, sociedade de controle, justiça e memória, a verdade como sentença, Brasil distópico, futuro autoritário, inteligência artificial e governo, ficção tecnológica, distopia brasileira, sistema de vigilância, mundo controlado por IA, ficção moral futurista, drama psicológico, sociedade da verdade, livros para quem gosta de Black Mirror, livros como Admirável Mundo Novo, livros com crítica social, livros que fazem pensar, romances filosóficos brasileiros, livros de suspense psicológico, autores brasileiros contemporâneos, melhores thrillers nacionais, literatura reflexiva moderna, A Verdade ou a Morte book, Felipe Mello author, Brazilian dystopian novel, philosophical thriller, truth and morality, artificial intelligence and ethics, moral survival fiction, dystopian future Brazil, truth as a sentence, literary psychological thriller">
   <meta name="author" content="Felipe Mello">
   <meta name="language" content="pt-BR">
 
@@ -33,7 +37,7 @@
     "name": "A Verdade ou a Morte",
     "author": {"@type": "Person", "name": "Felipe Mello"},
     "inLanguage": "pt-BR",
-    "bookFormat": "EBook",
+    "bookFormat": "https://schema.org/EBook",
     "url": "https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3ZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1",
     "image": "https://averdadeouamorte.github.io/images/2.png",
     "genre": ["Ficção filosófica","Distopia","Romance psicológico"],
@@ -123,7 +127,7 @@
 
   <!-- O UNIVERSO -->
   <section id="universo" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
-    <div class="max-w-6xl mx_auto px-4">
+    <div class="max-w-6xl mx-auto px-4"> <!-- << aqui: mx-auto -->
       <h2 class="text-3xl md:text-4xl text-petroleum font-bold">O Universo</h2>
       <div class="mt-6 grid md:grid-cols-3 gap-6">
         <div class="p-6 border border-gray-800 rounded-xl">
