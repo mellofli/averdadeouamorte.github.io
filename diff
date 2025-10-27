@@ -95,9 +95,10 @@
     <img src="images/2.png" alt="Capa do livro A Verdade ou a Morte de Felipe Mello, thriller filosófico distópico" class="absolute inset-0 w-full h-full object-cover opacity-30" />
     <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
       <div class="max-w-3xl">
-        <blockquote class="text-petroleum text-xl md:text-2xl font-semibold mb-6">
+        <blockquote class="text-gray-400 text-xl md:text-2xl font-semibold mb-6">
           “Cada sociedade tem seu regime de verdade, sua ‘política geral’ de verdade: os tipos de discursos que ela aceita e faz funcionar como verdadeiros.”
-          <br><span class="text-ink text-base font-light">— Michel Foucault (1926 – 1984)</span>
+          <br>
+          <span class="text-gray-400 text-base font-light">— Michel Foucault (1926 – 1984)</span>
         </blockquote>
         <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">A Verdade ou a Morte</h1>
         <p class="mt-4 text-gray-300 max-w-2xl">Portal oficial do universo criado por Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a consciência humana à máquina. Este é o mapa desse mundo: livros, ideias e destinos.</p>
