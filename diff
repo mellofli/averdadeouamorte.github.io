@@ -17,10 +17,13 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
   <meta property="og:url" content="https://averdadeouamorte.github.io/">
   <meta property="og:title" content="A Verdade ou a Morte – Universo oficial de Felipe Mello">
   <meta property="og:description" content="No Brasil de 2040, a verdade é sentença. Um thriller sobre moralidade, segredos e sobrevivência.">
   <meta property="og:image" content="https://averdadeouamorte.github.io/images/2.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -28,6 +31,7 @@
   <meta name="twitter:title" content="A Verdade ou a Morte – Universo oficial de Felipe Mello">
   <meta name="twitter:description" content="No Brasil de 2040, a verdade é sentença. Um thriller sobre moralidade, segredos e sobrevivência.">
   <meta name="twitter:image" content="https://averdadeouamorte.github.io/images/2.png">
+  <meta name="twitter:image:alt" content="Capa do livro A Verdade ou a Morte – Felipe Mello">
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
