@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A Verdade ou a Morte – Universo oficial de Felipe Mello</title>
-  <link rel="canonical" href="https://felipemello.github.io/">
+  <link rel="canonical" href="https://averdadeouamorte.github.io/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1, max-snippet:-1">
   <meta name="description" content="Thriller filosófico de Felipe Mello num Brasil distópico onde a verdade é obrigatória e a mentira, sentença. Explore o universo de A Verdade ou a Morte: livro, ideias e fragmentos.">
   <meta name="keywords" content="A Verdade ou a Morte, Felipe Mello, livro A Verdade ou a Morte, romance de Felipe Mello, livro brasileiro distópico, thriller filosófico, ficção contemporânea brasileira, literatura distópica nacional, romance psicológico moderno, livro sobre verdade e mentira, verdade e moralidade, ética e sobrevivência, Michel Foucault verdade, filosofia da verdade, o poder da mentira, moral em tempos de IA, o preço da sinceridade, sociedade de controle, justiça e memória, a verdade como sentença, Brasil distópico, futuro autoritário, inteligência artificial e governo, ficção tecnológica, distopia brasileira, sistema de vigilância, mundo controlado por IA, ficção moral futurista, drama psicológico, sociedade da verdade, livros para quem gosta de Black Mirror, livros como Admirável Mundo Novo, livros com crítica social, livros que fazem pensar, romances filosóficos brasileiros, livros de suspense psicológico, autores brasileiros contemporâneos, melhores thrillers nacionais, literatura reflexiva moderna, A Verdade ou a Morte book, Felipe Mello author, Brazilian dystopian novel, philosophical thriller, truth and morality, artificial intelligence and ethics, moral survival fiction, dystopian future Brazil, truth as a sentence, literary psychological thriller">
@@ -13,17 +13,17 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://felipemello.github.io/">
+  <meta property="og:url" content="https://averdadeouamorte.github.io/">
   <meta property="og:title" content="A Verdade ou a Morte – Universo oficial de Felipe Mello">
   <meta property="og:description" content="No Brasil de 2040, a verdade é sentença. Um thriller sobre moralidade, segredos e sobrevivência.">
-  <meta property="og:image" content="https://felipemello.github.io/images/2.png">
+  <meta property="og:image" content="https://averdadeouamorte.github.io/images/2.png">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://felipemello.github.io/">
+  <meta name="twitter:url" content="https://averdadeouamorte.github.io/">
   <meta name="twitter:title" content="A Verdade ou a Morte – Universo oficial de Felipe Mello">
   <meta name="twitter:description" content="No Brasil de 2040, a verdade é sentença. Um thriller sobre moralidade, segredos e sobrevivência.">
-  <meta name="twitter:image" content="https://felipemello.github.io/images/2.png">
+  <meta name="twitter:image" content="https://averdadeouamorte.github.io/images/2.png">
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
@@ -34,8 +34,8 @@
     "author": {"@type": "Person", "name": "Felipe Mello"},
     "inLanguage": "pt-BR",
     "bookFormat": "EBook",
-    "url": "https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3rZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1",
-    "image": "https://felipemello.github.io/images/2.png",
+    "url": "https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3ZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1",
+    "image": "https://averdadeouamorte.github.io/images/2.png",
     "genre": ["Ficção filosófica","Distopia","Romance psicológico"],
     "description": "Um Brasil da Verdade Obrigatória: a máquina julga, a mentira executa, e a consciência é levada ao limite."
   }
@@ -78,7 +78,7 @@
         <a href="#fragmentos" class="hover:text-white">Fragmentos</a>
         <a href="#novidades" class="hover:text-white">Novidades</a>
       </nav>
-      <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3rZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="md:inline-flex hidden bg-petroleum hover:bg-darkPetroleum text-white px-4 py-2 rounded-lg shadow-soft" aria-label="Comprar A Verdade ou a Morte na Amazon">Comprar na Amazon</a>
+      <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3ZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="md:inline-flex hidden bg-petroleum hover:bg-darkPetroleum text-white px-4 py-2 rounded-lg shadow-soft" aria-label="Comprar A Verdade ou a Morte na Amazon">Comprar na Amazon</a>
     </div>
   </header>
 
@@ -94,7 +94,7 @@
         <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">A Verdade ou a Morte</h1>
         <p class="mt-4 text-gray-300 max-w-2xl">Portal oficial do universo criado por Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a consciência humana à máquina. Este é o mapa desse mundo: livros, ideias e destinos.</p>
         <div class="mt-8 flex gap-3">
-          <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3rZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="bg-petroleum hover:bg-darkPetroleum text-white px-6 py-3 rounded-lg shadow-soft">Comprar na Amazon</a>
+          <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3ZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="bg-petroleum hover:bg-darkPetroleum text-white px-6 py-3 rounded-lg shadow-soft">Comprar na Amazon</a>
           <a href="#universo" class="px-6 py-3 rounded-lg border border-gray-700 hover:border-gray-500">Conheça o Universo</a>
         </div>
       </div>
@@ -111,7 +111,7 @@
           <p class="italic text-gray-400">“A verdade não pertencia mais às pessoas. Pertencia à máquina.”</p>
         </div>
         <div class="mt-6 flex gap-3">
-          <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3rZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="bg-petroleum hover:bg-darkPetroleum text-white px-5 py-2.5 rounded-lg">Comprar na Amazon</a>
+          <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3ZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="bg-petroleum hover:bg-darkPetroleum text-white px-5 py-2.5 rounded-lg">Comprar na Amazon</a>
           <a href="#fragmentos" class="px-5 py-2.5 rounded-lg border border-gray-700 hover:border-gray-500">Ler fragmentos</a>
         </div>
       </div>
@@ -123,7 +123,7 @@
 
   <!-- O UNIVERSO -->
   <section id="universo" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
-    <div class="max-w-6xl mx-auto px-4">
+    <div class="max-w-6xl mx_auto px-4">
       <h2 class="text-3xl md:text-4xl text-petroleum font-bold">O Universo</h2>
       <div class="mt-6 grid md:grid-cols-3 gap-6">
         <div class="p-6 border border-gray-800 rounded-xl">
@@ -188,22 +188,22 @@
       <h2 class="text-3xl md:text-4xl text-petroleum font-bold">Fragmentos</h2>
       <div class="mt-8 grid md:grid-cols-3 gap-6">
         <article class="p-6 border border-gray-800 rounded-xl">
-          <p class="text-gray-200">“Eu nunca soube ao certo quando a verdade deixou de ser uma escolha.”</p>
+          <p class="text-gray-200">“Mentir se tornou um luxo que o país não podia mais pagar.”</p>
         </article>
         <article class="p-6 border border-gray-800 rounded-xl">
-          <p class="text-gray-200">“E assim, entre medo, resistência e um senso inevitável de destino, o Brasil.”</p>
+          <p class="text-gray-200">“O Fórum da Verdade não julga — apenas executa.”</p>
         </article>
         <article class="p-6 border border-gray-800 rounded-xl">
           <p class="text-gray-200">“Toda justiça absoluta é uma forma de tirania.”</p>
         </article>
         <article class="p-6 border border-gray-800 rounded-xl">
-          <p class="text-gray-200">“Alguns amores não são para serem vividos.”</p>
+          <p class="text-gray-200">“A verdade não pertencia mais às pessoas. Pertencia à máquina.”</p>
         </article>
         <article class="p-6 border border-gray-800 rounded-xl">
           <p class="text-gray-200">“Um país inteiro prendeu a respiração. O bip soou.”</p>
         </article>
         <article class="p-6 border border-gray-800 rounded-xl">
-          <p class="text-gray-200">“No fim, restou apenas o eco. E o eco era silêncio”</p>
+          <p class="text-gray-200">“Quando a máquina decide, quem ainda possui uma alma?”</p>
         </article>
       </div>
     </div>
@@ -212,7 +212,7 @@
   <!-- NOVIDADES / NEWSLETTER -->
   <section id="novidades" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
     <div class="max-w-3xl mx-auto text-center px-4">
-      <h2 class="text-3xl md:py-0 md:text-4xl text-petroleum font-bold">Novidades & Lançamentos</h2>
+      <h2 class="text-3xl md:text-4xl text-petroleum font-bold">Novidades & Lançamentos</h2>
       <p class="mt-4 text-gray-400">Cadastre seu e-mail para receber trechos inéditos, pré-venda e eventos (1x por mês, sem spam).</p>
       <form class="mt-8 flex flex-col sm:flex-row gap-3 justify-center" action="#" method="post" onsubmit="alert('Assinatura registrada (exemplo). Substitua o action pelo endpoint da sua newsletter.'); return false;">
         <label class="sr-only" for="email-news">E-mail</label>
@@ -224,7 +224,7 @@
 
   <footer class="text-center py-8 border-t border-gray-800 text-gray-500">
     <p>© <span id="ano"></span> Universo A Verdade ou a Morte — Felipe Mello</p>
-    <p class="text-sm"><a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3rZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="text-petroleum hover:text-darkPetroleum">Comprar o livro diretamente na Amazon</a></p>
+    <p class="text-sm"><a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3ZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="text-petroleum hover:text-darkPetroleum">Comprar o livro diretamente na Amazon</a></p>
   </footer>
 
   <script>document.getElementById('ano').textContent = new Date().getFullYear()</script>
