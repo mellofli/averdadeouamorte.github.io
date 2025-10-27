@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://averdadeouamorte.github.io/sitemap.xml
