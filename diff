@@ -15,7 +15,6 @@
   <meta name="author" content="Felipe Mello">
   <meta name="language" content="pt-BR">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:url" content="https://averdadeouamorte.github.io/">
@@ -25,7 +24,6 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://averdadeouamorte.github.io/">
   <meta name="twitter:title" content="A Verdade ou a Morte – Universo oficial de Felipe Mello">
@@ -33,7 +31,6 @@
   <meta name="twitter:image" content="https://averdadeouamorte.github.io/images/2.png">
   <meta name="twitter:image:alt" content="Capa do livro A Verdade ou a Morte – Felipe Mello">
 
-  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -49,23 +46,20 @@
   }
   </script>
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/2.png">
 
-  <!-- Styles -->
-    <!-- Styles -->
   <style>
     body {
       font-family: 'Arial Nova', Arial, sans-serif;
     }
 
-    /* Força a cor gray-300 para o texto e o autor da citação */
+    /* MUDANÇA AQUI: Força a cor gray-400 (hex #9ca3af) para o texto e o autor da citação de Foucault */
     #citacao-foucault,
     #citacao-foucault * {
-      color: #d1d5db !important; /* Tailwind gray-300 */
+      color: #9ca3af !important; /* Tailwind gray-400 (seu 'steel') */
     }
-
   </style>
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -75,8 +69,8 @@
             night: '#0a0f1f',
             petroleum: '#0f3b45',
             darkPetroleum: '#0b2e36',
-            steel: '#9ca3af',
-            ink: '#d1d5db'
+            steel: '#9ca3af', // Cor gray-400
+            ink: '#d1d5db' // Cor gray-300
           },
           boxShadow: { soft:'0 10px 40px rgba(0,0,0,.35)' }
         }
@@ -86,7 +80,6 @@
   </script>
 </head>
 <body class="bg-night text-steel">
-  <!-- NAV -->
   <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-night/70 border-b border-gray-800">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="#" class="text-white font-semibold tracking-wide" aria-label="Universo A Verdade ou a Morte – Felipe Mello">Universo <span class="text-petroleum">A Verdade ou a Morte</span></a>
@@ -98,22 +91,21 @@
         <a href="#fragmentos" class="hover:text-white">Fragmentos</a>
         <a href="#novidades" class="hover:text-white">Novidades</a>
       </nav>
-      <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3ZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="md:inline-flex hidden bg-petroleum hover:bg-darkPetroleum text-white px-4 py-2 rounded-lg shadow-soft" aria-label="Comprar A Verdade ou a Morte na Amazon">Comprar na Amazon</a>
+      <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3ZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i1WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="md:inline-flex hidden bg-petroleum hover:bg-darkPetroleum text-white px-4 py-2 rounded-lg shadow-soft" aria-label="Comprar A Verdade ou a Morte na Amazon">Comprar na Amazon</a>
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="relative overflow-hidden">
     <img src="images/2.png" alt="Capa do livro A Verdade ou a Morte de Felipe Mello, thriller filosófico distópico" class="absolute inset-0 w-full h-full object-cover opacity-30" />
     <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
       <div class="max-w-3xl">
-  <blockquote
+<blockquote
   id="citacao-foucault"
-  style="all: unset; display: block; color:#d1d5db !important; font-size:1.25rem; line-height:1.6; font-weight:600; margin-bottom:1.5rem;"
+  class="text-xl leading-relaxed font-semibold mb-6"
 >
   “Cada sociedade tem seu regime de verdade, sua ‘política geral’ de verdade: os tipos de discursos que ela aceita e faz funcionar como verdadeiros.”
   <br>
-  <span style="color:#d1d5db !important; font-weight:300; font-size:1rem;">— Michel Foucault (1926 – 1984)</span>
+  <span class="font-light text-base block mt-2">— Michel Foucault (1926 – 1984)</span>
 </blockquote>
         <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">A Verdade ou a Morte</h1>
         <p class="mt-4 text-gray-300 max-w-2xl">Portal oficial do universo criado por Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a consciência humana à máquina. Este é o mapa desse mundo: livros, ideias e destinos.</p>
@@ -125,7 +117,6 @@
     </div>
   </section>
 
-  <!-- O LIVRO -->
   <section id="livro" class="py-16 md:py-24">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
       <div>
@@ -145,9 +136,8 @@
     </div>
   </section>
 
-  <!-- O UNIVERSO -->
   <section id="universo" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
-    <div class="max-w-6xl mx-auto px-4"> <!-- << aqui: mx-auto -->
+    <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl text-petroleum font-bold">O Universo</h2>
       <div class="mt-6 grid md:grid-cols-3 gap-6">
         <div class="p-6 border border-gray-800 rounded-xl">
@@ -166,7 +156,6 @@
     </div>
   </section>
 
-  <!-- O AUTOR -->
   <section id="autor" class="py-16 md:py-24">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
       <div class="order-2 md:order-1">
@@ -185,7 +174,6 @@
     </div>
   </section>
 
-  <!-- IDEIAS -->
   <section id="ideias" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl text-petroleum font-bold">Ideias</h2>
@@ -206,7 +194,6 @@
     </div>
   </section>
 
-  <!-- FRAGMENTOS -->
   <section id="fragmentos" class="py-16 md:py-24">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl text-petroleum font-bold">Fragmentos</h2>
@@ -233,7 +220,6 @@
     </div>
   </section>
 
-  <!-- NOVIDADES / NEWSLETTER -->
   <section id="novidades" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
     <div class="max-w-3xl mx-auto text-center px-4">
       <h2 class="text-3xl md:text-4xl text-petroleum font-bold">Novidades & Lançamentos</h2>
