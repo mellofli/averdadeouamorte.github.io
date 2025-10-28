@@ -2,8 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://averdadeouamorte.github.io/</loc>
-    <lastmod>2025-10-27</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://averdadeouamorte.github.io/#livro</loc>
+  </url>
+  <url>
+    <loc>https://averdadeouamorte.github.io/#fragmentos</loc>
+  </url>
+  <url>
+    <loc>https://averdadeouamorte.github.io/#universo</loc>
+  </url>
+  <url>
+    <loc>https://averdadeouamorte.github.io/#autor</loc>
+  </url>
+  <url>
+    <loc>https://averdadeouamorte.github.io/#novidades</loc>
   </url>
 </urlset>
