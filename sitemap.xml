@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Home -->
+
+  <!-- Página principal -->
   <url>
     <loc>https://mellofli.github.io/averdadeouamorte.github.io/</loc>
     <lastmod>2025-10-28</lastmod>
@@ -8,35 +9,13 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Seções principais da one-page (âncoras ajudam os buscadores a entender o conteúdo) -->
+  <!-- Sessões internas (Google ignora âncoras, mas mantém a relevância da página base) -->
   <url>
-    <loc>https://mellofli.github.io/averdadeouamorte.github.io/#livro</loc>
+    <loc>https://mellofli.github.io/averdadeouamorte.github.io/</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://mellofli.github.io/averdadeouamorte.github.io/#fragmentos</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mellofli.github.io/averdadeouamorte.github.io/#universo</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mellofli.github.io/averdadeouamorte.github.io/#autor</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mellofli.github.io/averdadeouamorte.github.io/#novidades</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
+
 </urlset>
+
