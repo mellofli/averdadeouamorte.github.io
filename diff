@@ -133,7 +133,7 @@
       <div class="mt-6 grid md:grid-cols-3 gap-6">
         <div class="p-6 border border-gray-800 rounded-xl">
           <h3 class="text-xl text-white font-semibold">Fórum da Verdade</h3>
-          <p class="mt-2 text-gray-300">IA, polígrafo e microexpressões definem veredictos binários. Sem contexto. Sem recurso. A sentença é imediata.</p>
+          <p class="mt-2 text-gray-300">No Forúm da Verdade, a IA e microexpressões definem veredictos binários. Sem contexto. Sem recurso. A sentença é imediata.</p>
         </div>
         <div class="p-6 border border-gray-800 rounded-xl">
           <h3 class="text-xl text-white font-semibold">Regra do Jogo</h3>
@@ -141,7 +141,7 @@
         </div>
         <div class="p-6 border border-gray-800 rounded-xl">
           <h3 class="text-xl text-white font-semibold">Linhas de Destino</h3>
-          <p class="mt-2 text-gray-300">Daniel, Rafaela, Isabela, Tomé — vidas cruzadas por um país que trocou ambiguidade por aço.</p>
+          <p class="mt-2 text-gray-300">Daniel, Rafaela, Isabela, Tomé — vidas cruzadas por um país que trocou séculos de mentiras pela verdade.</p>
         </div>
       </div>
     </div>
@@ -193,7 +193,7 @@
     </div>
   </section>
 
-  <!-- NEWSLETTER -->
+  <!-- NOVIDADES -->
   <section id="novidades" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
     <div class="max-w-3xl mx-auto text-center px-4">
       <h2 class="text-3xl md:text-4xl text-petroleum font-bold">Novidades & Lançamentos</h2>
