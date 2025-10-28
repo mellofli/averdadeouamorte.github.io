@@ -82,7 +82,7 @@
 <body class="bg-night text-steel">
   <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-night/70 border-b border-gray-800">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="text-white font-semibold tracking-wide" aria-label="Universo A Verdade ou a Morte – Felipe Mello">Universo <span class="text-petroleum">A Verdade ou a Morte</span></a>
+      <a href="#" class="text-white font-semibold tracking-wide" aria-label="Universo A Verdade ou a Morte – Felipe Mello">Universo <span class="text-gray-400">A Verdade ou a Morte</span></a>
       <nav class="hidden md:flex gap-6" aria-label="Navegação principal">
         <a href="#livro" class="hover:text-white">O Livro</a>
         <a href="#universo" class="hover:text-white">O Universo</a>
@@ -96,7 +96,8 @@
   </header>
 
   <section class="relative overflow-hidden">
-    <img src="images/2.png" alt="Capa do livro A Verdade ou a Morte de Felipe Mello, thriller filosófico distópico" class="absolute inset-0 w-full h-full object-cover opacity-30" />
+    <img src="images/2.png" alt="Capa do livro A Verdade ou a Morte de Felipe Mello, thriller filosófico distópico" class="absolute inset-0 w-full h-full object-cover opacity-20" />
+    <div class="absolute inset-0 bg-night/60 md:bg-night/40"></div>
     <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
       <div class="max-w-3xl">
 <blockquote
@@ -109,9 +110,15 @@
 </blockquote>
         <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">A Verdade ou a Morte</h1>
         <p class="mt-4 text-gray-300 max-w-2xl">Portal oficial do universo criado por Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a consciência humana à máquina. Este é o mapa desse mundo: livros, ideias e destinos.</p>
-        <div class="mt-8 flex gap-3">
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
           <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/ref=sr_1_1?crid=2HEBM0MFH664F&dib=eyJ2IjoiMSJ9.9eVWPvyVp6vjLLnGQRXAzWC2SAbUMJOzTCFQX45AQHVBkUWh80e73G-xUCTwyuwhB0SPE64K-oCMisCu68SVJ1DGwYWbMdACH-i0MrHhWZ1v_mLd6xNkohjCIdL4hejDC1nDX-bHZgcE8B3ZQ2wpRYdhwu75K99SBIMwF-TtXNQyQ77wGK_d4nG4-OysojlUnZX6u4i6WtkApAjJcRohFHMn57PEFuJ34UbGLljPtyxKcM_4eHka1mUNh2j0pX17fMpiJK_ot2T2iOPmjZjDigTSqGV_j3ukMpikUawRbE.YG_GzFeOwog3DPGqN7bpm9Zzm7EXl2w2CDutu7G-P6A&dib_tag=se&keywords=a+verdade+ou+a+morte&qid=1761482283&sprefix=%2Caps%2C225&sr=8-1" target="_blank" rel="noopener" class="bg-petroleum hover:bg-darkPetroleum text-white px-6 py-3 rounded-lg shadow-soft">Comprar na Amazon</a>
-          <a href="#universo" class="px-6 py-3 rounded-lg border border-gray-700 hover:border-gray-500">Conheça o Universo</a>
+          <a href="#universo"
+   class="px-6 py-3 rounded-lg bg-white/10 text-white border border-white/20 backdrop-blur
+          hover:bg-white/20 hover:border-white/30 transition transform hover:-translate-y-0.5
+          focus:outline-none focus:ring-2 focus:ring-petroleum/60">
+  Conheça o Universo
+  </a>
+
         </div>
       </div>
     </div>
@@ -219,6 +226,46 @@
       </div>
     </div>
   </section>
+
+  <!-- PRÓXIMOS LIVROS -->
+<section id="proximos-livros" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl text-petroleum font-bold">Próximos Livros</h2>
+    <p class="mt-3 text-gray-400 max-w-2xl">
+      O universo A Verdade ou a Morte continua a se expandir. Em breve:
+    </p>
+
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <article class="p-6 rounded-xl border border-gray-800 bg-white/5 backdrop-blur">
+        <h3 class="text-xl text-white font-semibold">Entre os Muros</h3>
+        <p class="mt-2 text-gray-300 text-sm">
+          Ecos do Fórum da Verdade reverberam em labirintos de concreto. O que os muros guardam?
+        </p>
+        <span class="inline-block mt-4 text-xs text-gray-400">Em construção</span>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="p-6 rounded-xl border border-gray-800 bg-white/5 backdrop-blur">
+        <h3 class="text-xl text-white font-semibold">Na Sala Fria</h3>
+        <p class="mt-2 text-gray-300 text-sm">
+          A régua da verdade nunca treme. E quando a temperatura cai, a memória congela ou revela?
+        </p>
+        <span class="inline-block mt-4 text-xs text-gray-400">Em construção</span>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="p-6 rounded-xl border border-gray-800 bg-white/5 backdrop-blur">
+        <h3 class="text-xl text-white font-semibold">O que o Futuro nos traz</h3>
+        <p class="mt-2 text-gray-300 text-sm">
+          Verdade, máquina e destino: o que se enxerga na linha adiante?
+        </p>
+        <span class="inline-block mt-4 text-xs text-gray-400">Em construção</span>
+      </article>
+    </div>
+  </div>
+</section>
+
 
   <section id="novidades" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
     <div class="max-w-3xl mx-auto text-center px-4">
