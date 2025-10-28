@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- 🔍 SEO e verificação -->
   <meta name="google-site-verification" content="z8fLgbnwweAigOId8h_MAzUSoF0eKrY-0hwRObnP5Rw" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>A Verdade ou a Morte – Universo oficial de Felipe Mello</title>
-  <link rel="canonical" href="https://averdadeouamorte.github.io/">
-  <meta name="theme-color" content="#0f3b45">
-  <meta property="og:site_name" content="A Verdade ou a Morte">
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="Thriller filosófico de Felipe Mello num Brasil distópico onde a verdade é obrigatória e a mentira, sentença. Explore o universo de A Verdade ou a Morte: livro, ideias e fragmentos.">
-  <meta name="author" content="Felipe Mello">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:image" content="https://averdadeouamorte.github.io/images/2.png">
+  <title>A Verdade ou a Morte — romance distópico brasileiro de Felipe Mello</title>
 
+  <!-- URLs corretas do project page -->
+  <link rel="canonical" href="https://mellofli.github.io/averdadeouamorte.github.io/">
+  <meta property="og:url" content="https://mellofli.github.io/averdadeouamorte.github.io/">
+
+  <meta name="theme-color" content="#0f3b45">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Romance distópico brasileiro de Felipe Mello. No Brasil de 2040, o Fórum da Verdade julga consciências por máquinas. Um thriller filosófico sobre verdade, poder e destino.">
+  <meta name="author" content="Felipe Mello">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="A Verdade ou a Morte">
+  <meta property="og:type" content="book">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="A Verdade ou a Morte — romance distópico brasileiro de Felipe Mello">
+  <meta property="og:description" content="No Brasil de 2040, a máquina decide o veredito. Explore o universo do livro de Felipe Mello.">
+  <meta property="og:image" content="https://mellofli.github.io/averdadeouamorte.github.io/images/2.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A Verdade ou a Morte — romance distópico brasileiro">
+  <meta name="twitter:description" content="Um thriller filosófico sobre verdade e poder no Brasil de 2040.">
+  <meta name="twitter:image" content="https://mellofli.github.io/averdadeouamorte.github.io/images/2.png">
+
+  <!-- Sitemap (arquivo na raiz do repo) -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- Schema.org Book -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "A Verdade ou a Morte",
+    "author": {
+      "@type": "Person",
+      "name": "Felipe Mello",
+      "sameAs": "https://www.linkedin.com/in/mellofli/"
+    },
+    "inLanguage": "pt-BR",
+    "bookFormat": "https://schema.org/EBook",
+    "genre": ["Ficção", "Distopia", "Thriller filosófico", "Literatura brasileira"],
+    "description": "Romance distópico brasileiro de Felipe Mello: no Brasil de 2040, o Fórum da Verdade julga consciências por máquina. Um techno-thriller filosófico sobre verdade, poder e destino.",
+    "image": "https://mellofli.github.io/averdadeouamorte.github.io/images/2.png",
+    "url": "https://mellofli.github.io/averdadeouamorte.github.io/",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <!-- Tailwind -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -36,20 +78,13 @@
     }
   </script>
 
+  <!-- Estilos finos -->
   <style>
     body { font-family: 'Arial Nova', Arial, sans-serif; }
 
     /* Títulos em Deep Cyan Mist */
-    #livro h2,
-    #fragmentos h2,
-    #universo h2,
-    #autor h2,
-    #proximos-livros h2,
-    #novidades h2,
-    h2.text-petroleum,
-    h3.text-petroleum {
-      color: #1f6975 !important; /* Deep Cyan Mist */
-    }
+    #livro h2, #fragmentos h2, #universo h2, #autor h2, #proximos-livros h2, #novidades h2,
+    h2.text-petroleum, h3.text-petroleum { color: #1f6975 !important; }
 
     /* Header */
     #breadcrumb-title { color: #d1d5db !important; }
@@ -72,7 +107,6 @@
         <a href="#livro" class="hover:text-white">O Livro</a>
         <a href="#universo" class="hover:text-white">O Universo</a>
         <a href="#autor" class="hover:text-white">O Autor</a>
-        <a href="#ideias" class="hover:text-white">Ideias</a>
         <a href="#fragmentos" class="hover:text-white">Fragmentos</a>
         <a href="#novidades" class="hover:text-white">Novidades</a>
       </nav>
@@ -86,19 +120,20 @@
 
   <!-- HERO -->
   <section class="relative overflow-hidden">
-    <img src="images/2.png" alt="Capa do livro A Verdade ou a Morte" class="absolute inset-0 w-full h-full object-cover opacity-20" />
+    <img src="images/2.png" alt="Capa do romance distópico brasileiro A Verdade ou a Morte" class="absolute inset-0 w-full h-full object-cover opacity-20" />
     <div class="absolute inset-0 bg-night/60 md:bg-night/40"></div>
 
     <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
       <div class="max-w-3xl">
         <blockquote id="citacao-foucault" class="text-xl md:text-2xl leading-relaxed font-semibold mb-6">
           “Cada sociedade tem seu regime de verdade, sua ‘política geral’ de verdade: os tipos de discursos que ela aceita e faz funcionar como verdadeiros.”
-          <br>
-          <span class="autor font-light text-base block mt-2">— Michel Foucault (1926 – 1984)</span>
+          <br><span class="autor font-light text-base block mt-2">— Michel Foucault (1926 – 1984)</span>
         </blockquote>
 
         <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">A Verdade ou a Morte</h1>
-        <p class="mt-4 text-gray-300 max-w-2xl">Portal oficial do universo criado por Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a consciência humana à máquina. Este é o mapa desse mundo: livros, ideias e destinos.</p>
+        <p class="mt-4 text-gray-300 max-w-2xl">
+          Um romance distópico brasileiro de Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a consciência humana à máquina. Este é o mapa desse mundo: livros, ideias e destinos.
+        </p>
 
         <div class="mt-8 flex flex-col sm:flex-row gap-3">
           <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
@@ -122,19 +157,22 @@
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
       <div>
         <h2 class="text-3xl md:text-4xl font-bold">O Livro</h2>
-        <p class="mt-4 text-gray-300">No Brasil da Verdade Obrigatória, cada cidadão pode ser interrogado e a máquina decide entre vida e morte. Um senador, um vendedor de ilusões, uma médica, uma filha em silêncio e um padeiro que aprendeu a dizer não. A justiça absoluta revela sua própria tirania.</p>
+        <p class="mt-4 text-gray-300">
+          No Brasil da Verdade Obrigatória, cada cidadão pode ser interrogado e a máquina decide entre vida e morte. Um senador, um vendedor de ilusões, uma médica, uma filha em silêncio e um padeiro que aprendeu a dizer não. A justiça absoluta revela sua própria tirania.
+        </p>
         <div class="mt-6 p-6 border border-gray-800 rounded-xl">
           <p class="italic text-gray-400">“A verdade não pertencia mais às pessoas. Pertencia à máquina.”</p>
         </div>
-        <div class="mt-6 flex gap-3">
+        <div class="mt-6">
           <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
              target="_blank" rel="noopener"
-             class="bg-petroleum hover:bg-darkPetroleum text-white px-5 py-2.5 rounded-lg">Comprar na Amazon</a>
-          <a href="#fragmentos" class="px-5 py-2.5 rounded-lg border border-gray-700 hover:border-gray-500">Ler fragmentos</a>
+             class="inline-block bg-petroleum hover:bg-darkPetroleum text-white px-5 py-2.5 rounded-lg">
+             Comprar na Amazon
+          </a>
         </div>
       </div>
       <div class="rounded-xl overflow-hidden shadow-soft">
-        <img src="images/3.png" alt="Arte do universo distópico do livro" class="w-full h-full object-cover" />
+        <img src="images/3.png" alt="Cenário futurista do universo do romance distópico A Verdade ou a Morte" class="w-full h-full object-cover" />
       </div>
     </div>
   </section>
@@ -167,7 +205,7 @@
     </div>
   </section>
 
-  <!-- UNIVERSO -->
+  <!-- O UNIVERSO -->
   <section id="universo" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-bold">O Universo</h2>
@@ -257,12 +295,12 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="text-center py-8 border-t border-gray-800 text-gray-500">
     <p>© <span id="ano"></span> Universo A Verdade ou a Morte — Felipe Mello</p>
   </footer>
 
-  <script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
