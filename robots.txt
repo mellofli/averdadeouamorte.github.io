@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://mellofli.github.io/averdadeouamorte.github.io/sitemap.xml
-
