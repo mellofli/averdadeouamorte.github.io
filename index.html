@@ -127,6 +127,63 @@
     </div>
   </section>
 
+ <!-- Fragmento 2 – O Livro -->
+<section id="livro" class="bg-gray-900 text-gray-200 py-16">
+  <div class="max-w-6xl mx-auto px-6 lg:flex lg:items-center lg:gap-12">
+    <!-- Texto -->
+    <div class="lg:w-1/2">
+      <h2 class="text-3xl font-bold text-teal-400 mb-4">O Livro</h2>
+      <p class="mb-6 leading-relaxed">
+        No Brasil da Verdade Obrigatória, cada cidadão pode ser interrogado e a máquina decide entre vida e morte.
+        Um senador, um vendedor de ilusões, uma médica, uma filha em silêncio e um padeiro que aprendeu a dizer não.
+        A justiça absoluta revela sua própria tirania.
+      </p>
+      <blockquote class="border border-gray-700 p-4 italic text-gray-400 mb-6 rounded-lg">
+        “A verdade não pertencia mais às pessoas. Pertencia à máquina.”
+      </blockquote>
+      <div class="flex gap-4">
+        <a href="https://www.amazon.com.br" target="_blank"
+          class="bg-teal-700 hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg shadow">
+          Comprar na Amazon
+        </a>
+        <button onclick="toggleFragments()" 
+          class="border border-gray-600 text-gray-300 hover:bg-gray-800 px-6 py-3 rounded-lg transition">
+          Ler fragmentos
+        </button>
+      </div>
+    </div>
+
+    <!-- Imagem -->
+    <div class="lg:w-1/2 mt-10 lg:mt-0">
+      <img src="images/fragmento-livro.png" alt="A Verdade ou a Morte - Universo" class="rounded-2xl shadow-lg w-full" />
+    </div>
+  </div>
+
+  <!-- Fragmentos (ocultos até clicar) -->
+  <div id="fragments" class="hidden mt-12 max-w-4xl mx-auto space-y-8 text-gray-300">
+    <div class="border-l-4 border-teal-600 pl-4">
+      <p><strong>Fragmento I — O Início:</strong><br>
+      “Eu nunca soube ao certo quando a verdade deixou de ser uma escolha. Sei apenas que, quando percebi, ela já havia se tornado uma sentença.”</p>
+    </div>
+    <div class="border-l-4 border-teal-600 pl-4">
+      <p><strong>Fragmento II — A Filha:</strong><br>
+      “Até que, aos 14 anos, tudo mudou. O afastamento veio como um golpe seco, sem aviso. Um dia, ele chegou do trabalho, e Rafaela já não correu para encontrá-lo. Foi até o quarto dela, bateu na porta.”</p>
+    </div>
+    <div class="border-l-4 border-teal-600 pl-4">
+      <p><strong>Fragmento III — O Forúm da Verdade:</strong><br>
+      “Apenas um segundo de silêncio, um desvio no olhar. Pequenos detalhes que, para uma máquina, eram tão reveladores quanto uma confissão aberta.”</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleFragments() {
+    const frag = document.getElementById("fragments");
+    frag.classList.toggle("hidden");
+    window.scrollTo({ top: frag.offsetTop - 100, behavior: "smooth" });
+  }
+</script>
+
   <!-- UNIVERSO -->
   <section id="universo" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
     <div class="max-w-6xl mx-auto px-4">
