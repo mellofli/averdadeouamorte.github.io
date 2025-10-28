@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://averdadeouamorte.github.io/sitemap.xml
+Sitemap: https://mellofli.github.io/averdadeouamorte.github.io/sitemap.xml
+
