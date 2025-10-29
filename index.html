@@ -101,23 +101,79 @@
 
   <!-- LIVRO -->
   <section id="livro" class="py-16 md:py-24">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-bold">O Livro</h2>
-        <p class="mt-4 text-gray-300">No Brasil da Verdade Obrigatória, cada cidadão pode ser interrogado e a máquina decide entre vida e morte...</p>
-        <div class="mt-6 p-6 border border-gray-800 rounded-xl">
-          <p class="italic text-gray-400">“A verdade não pertencia mais às pessoas. Pertencia à máquina.”</p>
-        </div>
-        <div class="mt-6 flex gap-3">
-          <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
-             target="_blank" class="bg-petroleum hover:bg-darkPetroleum text-white px-5 py-2.5 rounded-lg">Comprar na Amazon</a>
-        </div>
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold">O Livro</h2>
+
+      <!-- Sinopse principal -->
+      <p class="mt-4 text-gray-300">
+        <strong>No Brasil da Verdade Obrigatória</strong>, toda pessoa pode ser chamada ao <em>Fórum da Verdade</em> e interrogada por uma máquina
+        que mede microexpressões, batimentos e hesitações. A resposta é binária. A sentença, imediata. A verdade — antes humana — agora é um protocolo.
+      </p>
+
+      <p class="mt-4 text-gray-300">
+        <strong>Daniel</strong> tenta sobreviver vendendo soluções para perguntas que ninguém deveria fazer.
+        <strong>Rafaela</strong>, sua filha, se recusa a falar desde que viu um veredito.
+        <strong>Isabela</strong>, médica de plantão, observa vidas que se decidem por milímetros de olhar.
+        <strong>Tomé</strong>, padeiro, aprendeu a dizer não com a paciência de quem lida com o fermento e com o tempo.
+        Ao redor deles, técnicos, políticos e fiéis do novo culto cívico erguem um país onde <strong>mentir é risco de morte</strong>
+        e <strong>dizer a verdade</strong> pode custar tudo o que se ama.
+      </p>
+
+      <p class="mt-4 text-gray-300">
+        As linhas de destino convergem para a sala fria do Fórum, onde a luz azul da máquina recorta rostos e elimina contextos.
+        <strong>Quem define o que é verdadeiro?</strong> Quando a verdade vira obrigação, o <em>medo</em> substitui a consciência e a
+        <em>justiça</em> se confunde com <em>eficiência</em>. Em <em>A Verdade ou a Morte</em>, a <strong>ficção distópica brasileira</strong> encontra
+        o thriller filosófico: ritmo, tensão e a pergunta que não se cala — vale a pena ser salvo por um sistema que já não nos enxerga?
+      </p>
+
+      <!-- Destaques temáticos -->
+      <div class="mt-6 p-6 border border-gray-800 rounded-xl">
+        <p class="italic text-gray-300">“A verdade não pertencia mais às pessoas. <strong>Pertencia à máquina</strong>.”</p>
+        <ul class="mt-4 grid sm:grid-cols-2 gap-3 text-gray-400 text-sm">
+          <li>• Poder e linguagem</li>
+          <li>• Corpo e vigilância</li>
+          <li>• Culpa pública, perdão privado</li>
+          <li>• Fé nas máquinas</li>
+          <li>• Moral individual vs. protocolo estatal</li>
+          <li>• Família, política e tecnologia</li>
+        </ul>
       </div>
-      <div class="rounded-xl overflow-hidden shadow-soft">
-        <img src="images/3.png" alt="Arte do universo distópico" class="w-full h-full object-cover" />
+
+      <!-- Bloco dobrável com mais detalhes (SEO sem pesar o layout) -->
+      <details class="mt-6 group">
+        <summary class="cursor-pointer text-ink hover:text-white transition">
+          Ver mais sobre o universo e os personagens
+        </summary>
+        <div class="mt-3 space-y-3 text-gray-300">
+          <p>
+            O <strong>Fórum da Verdade</strong> é o coração do novo Estado. As sessões são públicas, os relatórios são limpos, os números são
+            irrefutáveis. O que não aparece em planilha deixa de existir. Confiar na máquina é um ato cívico; desconfiar, quase um crime.
+          </p>
+            O romance propõe uma travessia: do conforto da certeza estatística à ferida da escolha moral. 
+            <em>A Verdade ou a Morte</em> é uma narrativa de ideias com a urgência de um thriller, parte da tradição de
+            <strong>ficção distópica brasileira</strong> que questiona instituições, linguagem e destino.
+          </p>
+        </div>
+      </details>
+
+      <!-- CTA -->
+      <div class="mt-6 flex gap-3">
+        <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
+           target="_blank" rel="noopener"
+           class="bg-petroleum hover:bg-darkPetroleum text-white px-5 py-2.5 rounded-lg shadow-soft">Comprar na Amazon</a>
+        <a href="#fragmentos"
+           class="px-5 py-2.5 rounded-lg border border-gray-700 hover:border-gray-500">Ler trechos</a>
       </div>
     </div>
-  </section>
+
+    <!-- Imagem ao lado (mantém a sua atual) -->
+    <div class="rounded-xl overflow-hidden shadow-soft">
+      <img src="images/3.png" alt="Arte do universo distópico do livro" class="w-full h-full object-cover" />
+    </div>
+  </div>
+</section>
+
 
   <!-- FRAGMENTOS (imagem à esquerda, texto à direita) -->
   <section id="fragmentos" class="py-16 md:py-24 border-t border-gray-800 bg-black/30">
