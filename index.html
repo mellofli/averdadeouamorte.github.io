@@ -9,6 +9,7 @@
   <meta name="author" content="Felipe Mello" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://averdadeouamorte.com/" />
+  <meta name="theme-color" content="#0f3b45" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -16,8 +17,11 @@
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:title" content="A Verdade ou a Morte – Universo oficial de Felipe Mello" />
   <meta property="og:description" content="No Brasil de 2040, o Fórum da Verdade decide entre vida e morte. Conheça o universo criado por Felipe Mello." />
-  <meta property="og:image" content="https://averdadeouamorte.com/images/2.png" />
+  <meta property="og:image" content="https://averdadeouamorte.com/images/2.webp" />
   <meta property="og:url" content="https://averdadeouamorte.com/" />
+
+  <!-- Preload hero para otimizar LCP -->
+  <link rel="preload" as="image" href="images/2.webp" imagesrcset="images/2.webp" />
 
   <style>
     :root{
@@ -35,21 +39,23 @@
     html,body{height:100%}
     body{
       margin:0;
-      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
+      font-family:"Arial Nova", Arial, "Helvetica Neue", Helvetica, sans-serif;
       background:var(--night);
       color:var(--ink);
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
+      text-rendering:optimizeLegibility;
     }
-    img{max-width:100%;display:block}
+    img{max-width:100%;display:block;height:auto}
     .container{max-width:1120px;margin:0 auto;padding:0 16px}
     .narrow{max-width:720px;margin:0 auto}
+    .center{text-align:center}
 
     /* Header */
     .site-header{position:sticky;top:0;z-index:50;background:var(--night-80);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
     .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
     .brand{display:flex;gap:8px;align-items:center;text-decoration:none}
-    .brand span:first-child{color:#fff;font-weight:600}
+    .brand span:first-child{color:#fff;font-weight:700;letter-spacing:.3px}
     .brand span:last-child{color:var(--ink)}
     .main-nav{display:none;gap:24px}
     .main-nav a{color:var(--ink);text-decoration:none}
@@ -78,7 +84,7 @@
     .hero-actions{display:flex;gap:12px;margin-top:24px;flex-direction:column}
     @media(min-width:640px){.hero-actions{flex-direction:row}}
 
-    .quote{font-size:20px;line-height:1.5;font-weight:600;margin:0 0 16px;color:var(--ink);max-width:750px}
+    .quote{font-size:20px;line-height:1.5;font-weight:700;margin:0 0 16px;color:var(--ink);max-width:750px}
     .quote small{display:block;margin-top:8px;font-weight:400;font-size:14px;color:var(--steel)}
 
     /* Sections */
@@ -91,7 +97,7 @@
     .grid-2{grid-template-columns:1fr}
     @media(min-width:960px){.grid-2{grid-template-columns:7fr 5fr}}
 
-    .prose{margin-top:18px;color:#d1d5db;line-height:1.7}
+    .prose{margin-top:18px;color:#d1d5db;line-height:1.75}
     .muted{color:#9ca3af}
     .italic{font-style:italic}
     .actions{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
@@ -105,7 +111,7 @@
     /* Fragmentos */
     .stack{display:flex;flex-direction:column;gap:24px}
     .fragment{padding-left:16px;border-left:4px solid var(--petroleum)}
-    .fragment h3{margin:0 0 8px;color:#fff;font-weight:600}
+    .fragment h3{margin:0 0 8px;color:#fff;font-weight:700}
     .fragment p{margin:0;color:#d1d5db}
 
     /* Cards */
@@ -151,7 +157,8 @@
 
   <!-- HERO -->
   <section class="hero">
-    <img src="images/2.png" alt="Capa do livro A Verdade ou a Morte" class="hero-bg" />
+    <img src="images/2.webp" alt="Capa do livro A Verdade ou a Morte" class="hero-bg"
+         loading="eager" decoding="async" />
     <div class="hero-overlay"></div>
 
     <div class="container hero-content">
@@ -222,7 +229,8 @@
 
       <!-- Imagem -->
       <div class="media">
-        <img src="images/3.png" alt="Arte do universo distópico do livro" />
+        <img src="images/3.webp" alt="Arte do universo distópico do livro"
+             loading="lazy" decoding="async" />
       </div>
     </div>
   </section>
@@ -232,8 +240,9 @@
     <div class="container grid grid-2">
       <!-- Imagem esquerda -->
       <div class="media">
-        <img src="images/4.png"
-             alt="Ambiente do Fórum da Verdade — A Verdade ou a Morte" />
+        <img src="images/4.webp"
+             alt="Ambiente do Fórum da Verdade — A Verdade ou a Morte"
+             loading="lazy" decoding="async" />
       </div>
 
       <!-- Texto direita -->
@@ -309,9 +318,10 @@
         </div>
       </div>
       <div class="media">
-        <img src="images/684790ab-b9d8-470c-ad21-264538db0df5.png"
+        <img src="images/684790ab-b9d8-470c-ad21-264538db0df5.webp"
              alt="Foto PB do autor Felipe Mello"
-             class="author-photo" />
+             class="author-photo"
+             loading="lazy" decoding="async" />
       </div>
     </div>
   </section>
@@ -320,7 +330,7 @@
   <section id="novidades" class="section section-alt">
     <div class="container narrow">
       <h2 class="section-title">Novidades &amp; Lançamentos</h2>
-      <p class="muted" style="text-align:center">Cadastre seu e-mail para receber trechos inéditos, pré-venda e eventos (1x por mês, sem spam).</p>
+      <p class="muted center">Cadastre seu e-mail para receber trechos inéditos, pré-venda e eventos (1x por mês, sem spam).</p>
 
       <form id="newsletter-form"
             action="https://formspree.io/f/mblpgnnn"
@@ -332,7 +342,7 @@
         <button type="submit" class="btn btn-primary">Participar</button>
       </form>
 
-      <p class="tiny muted" style="text-align:center">No máximo 1 e-mail por mês. Sem spam, apenas verdades.</p>
+      <p class="tiny muted center">No máximo 1 e-mail por mês. Sem spam, apenas verdades.</p>
     </div>
   </section>
 
@@ -346,4 +356,5 @@
   </script>
 </body>
 </html>
+
 
