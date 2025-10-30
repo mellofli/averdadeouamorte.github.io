@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Google Verification -->
-  <meta name="google-site-verification" content="z8fLgbnwweAigOId8h_MAzUSoF0eKrY-0hwRObnP5Rw" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>A Verdade ou a Morte – Ficção distópica brasileira de Felipe Mello</title>
-  <meta name="description" content="Romance distópico brasileiro de Felipe Mello. No Brasil de 2040, o Fórum da Verdade julga consciências por máquinas. Um thriller filosófico sobre verdade, poder e destino." />
-  <meta name="keywords" content="ficção distópica brasileira, romance distópico, literatura brasileira contemporânea, Felipe Mello, A Verdade ou a Morte, livro, filosofia, thriller, inteligência artificial" />
+  <title>A Verdade ou a Morte – Universo oficial de Felipe Mello</title>
+  <meta name="description" content="Thriller filosófico de Felipe Mello num Brasil distópico onde a verdade é obrigatória e a mentira, sentença. Explore o universo: livro, ideias e fragmentos." />
   <meta name="author" content="Felipe Mello" />
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="A Verdade ou a Morte – Ficção distópica brasileira de Felipe Mello">
-  <meta property="og:description" content="Romance filosófico e distópico de Felipe Mello ambientado num Brasil onde a verdade é obrigatória e a mentira, sentença.">
-  <meta property="og:image" content="https://mellofli.github.io/averdadeouamorte.github.io/images/2.png">
-  <meta property="og:url" content="https://mellofli.github.io/averdadeouamorte.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
+  <link rel="canonical" href="https://averdadeouamorte.com/" />
 
-  <link rel="canonical" href="https://mellofli.github.io/averdadeouamorte.github.io/">
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-  <meta name="theme-color" content="#0f3b45">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="A Verdade ou a Morte" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="A Verdade ou a Morte – Universo oficial de Felipe Mello" />
+  <meta property="og:description" content="No Brasil de 2040, o Fórum da Verdade decide entre vida e morte. Conheça o universo criado por Felipe Mello." />
+  <meta property="og:image" content="https://averdadeouamorte.com/images/2.png" />
+  <meta property="og:url" content="https://averdadeouamorte.com/" />
 
+  <!-- Tailwind CSS (garante o estilo) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
+        container: { center: true, padding: '1rem' },
         extend: {
           colors: {
             night: '#0a0f1f',
@@ -34,7 +33,7 @@
             darkPetroleum: '#0b2e36',
             steel: '#9ca3af',
             ink: '#d1d5db',
-            deepCyan: '#1f6975'
+            deepCyanMist: '#1f6975'
           },
           boxShadow: { soft: '0 10px 40px rgba(0,0,0,.35)' }
         }
@@ -44,61 +43,64 @@
   </script>
 
   <style>
-    body { font-family: 'Arial Nova', Arial, sans-serif; }
-    h2, h3 { color: #1f6975; } /* Deep Cyan Mist */
-    #breadcrumb-title, #citacao-foucault, #citacao-foucault .autor { color: #d1d5db !important; }
+    /* Títulos na cor pedida */
+    h2.section-title { color:#1f6975; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; }
   </style>
 </head>
 
-<body class="bg-night text-steel">
+<body class="bg-night text-ink antialiased">
   <!-- HEADER -->
-  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-night/70 border-b border-gray-800">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+  <header class="sticky top-0 z-50 bg-night/80 backdrop-blur border-b border-gray-800">
+    <div class="container max-w-6xl flex items-center justify-between py-3">
       <a href="#" class="font-semibold tracking-wide flex items-center gap-2" aria-label="Universo A Verdade ou a Morte – Felipe Mello">
         <span class="text-white">Universo</span>
-        <span id="breadcrumb-title">A Verdade ou a Morte</span>
+        <span class="text-ink">A Verdade ou a Morte</span>
       </a>
       <nav class="hidden md:flex gap-6" aria-label="Navegação principal">
         <a href="#livro" class="hover:text-white">O Livro</a>
         <a href="#universo" class="hover:text-white">O Universo</a>
         <a href="#autor" class="hover:text-white">O Autor</a>
-        <a href="#ideias" class="hover:text-white">Ideias</a>
         <a href="#fragmentos" class="hover:text-white">Fragmentos</a>
         <a href="#novidades" class="hover:text-white">Novidades</a>
       </nav>
       <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
          target="_blank" rel="noopener"
-         class="md:inline-flex hidden bg-petroleum hover:bg-darkPetroleum text-white px-4 py-2 rounded-lg shadow-soft">
-         Comprar na Amazon
+         class="hidden md:inline-flex bg-petroleum hover:bg-darkPetroleum text-white px-4 py-2 rounded-lg shadow-soft">
+        Comprar na Amazon
       </a>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="relative overflow-hidden">
-    <img src="images/2.png" alt="Capa do livro A Verdade ou a Morte" class="absolute inset-0 w-full h-full object-cover opacity-20" />
+    <img src="images/2.png" alt="Capa do livro A Verdade ou a Morte"
+         class="absolute inset-0 w-full h-full object-cover opacity-20" />
     <div class="absolute inset-0 bg-night/60 md:bg-night/40"></div>
 
-    <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
+    <div class="relative container max-w-6xl py-16 md:py-24">
       <div class="max-w-3xl">
-        <blockquote id="citacao-foucault" class="text-xl md:text-2xl font-semibold mb-6">
+        <blockquote class="text-xl md:text-2xl leading-relaxed font-semibold mb-6 text-ink">
           “Cada sociedade tem seu regime de verdade, sua ‘política geral’ de verdade: os tipos de discursos que ela aceita e faz funcionar como verdadeiros.”
-          <br><span class="autor font-light text-base block mt-2">— Michel Foucault</span>
+          <br />
+          <span class="font-light text-base block mt-2 text-steel">— Michel Foucault (1926 – 1984)</span>
         </blockquote>
 
         <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">A Verdade ou a Morte</h1>
-        <p class="mt-4 text-gray-300 max-w-2xl">Romance filosófico de Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a consciência humana à máquina. Este é o mapa desse mundo: livros, ideias e destinos.</p>
+        <p class="mt-4 text-gray-300 max-w-2xl">
+          Portal oficial do universo criado por Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a consciência humana à máquina.
+          Este é o mapa desse mundo: livros, ideias e destinos.
+        </p>
 
         <div class="mt-8 flex flex-col sm:flex-row gap-3">
           <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
              target="_blank" rel="noopener"
-             class="bg-petroleum hover:bg-darkPetroleum text-white px-6 py-3 rounded-lg shadow-soft">
+             class="bg-petroleum hover:bg-darkPetroleum text-white px-6 py-3 rounded-lg shadow-soft text-center">
              Comprar na Amazon
           </a>
           <a href="#universo"
              class="px-6 py-3 rounded-lg bg-white/10 text-white border border-white/20 backdrop-blur
-                    hover:bg-white/20 hover:border-white/30 transition transform hover:-translate-y-0.5
-                    focus:outline-none focus:ring-2 focus:ring-petroleum/60">
+                    hover:bg-white/20 hover:border-white/30 transition transform hover:-translate-y-0.5 text-center">
             Conheça o Universo
           </a>
         </div>
@@ -106,52 +108,53 @@
     </div>
   </section>
 
-  <!-- LIVRO (com seu novo texto) -->
+  <!-- O LIVRO -->
   <section id="livro" class="py-16 md:py-24">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-bold">O Livro</h2>
+    <div class="container max-w-6xl grid md:grid-cols-12 gap-10 items-start">
+      <!-- Texto à esquerda em desktop -->
+      <div class="md:col-span-7">
+        <h2 class="section-title text-3xl md:text-4xl font-bold">O Livro</h2>
 
-        <p class="mt-4 text-gray-300"><strong>No Brasil de 2040, a verdade não é mais uma virtude. É uma sentença.</strong></p>
-        <p class="mt-4 text-gray-300"><strong>A verdade não liberta. Ela destrói.</strong></p>
-
-        <p class="mt-4 text-gray-300">
-          Em um futuro próximo, a mentira foi erradicada à força. O Fórum da Verdade — uma entidade de inteligência artificial implacável — governa com punhos de ferro e perguntas afiadas como lâminas. Sua sentença? Uma única pergunta, sem direito a evasivas. Responda com sinceridade ou encare a execução imediata. Ninguém sabe quem controla a máquina.
-        </p>
-
-        <p class="mt-4 text-gray-300">
-          Quatro homens, ligados pelo passado se reencontram. Essa reunião revela segredos que o Fórum jamais ousaria permitir.
-        </p>
-
-        <p class="mt-4 text-gray-300">
-          O que começa como uma noite de risos e lembranças se transforma em um abismo onde cada um deles tem algo a perder: reputações, famílias, a própria sanidade. E o que escondem? Uma arma carregada apontada para tudo o que amam.
-        </p>
-
-        <p class="mt-4 text-gray-300">
-          Quando o sistema os mira, precisam escolher: sacrificar a amizade para salvar a própria pele ou encarar o Fórum e ver quem cai primeiro?
-        </p>
-
-        <p class="mt-4 text-gray-300">
-          <em>"A Verdade ou a Morte"</em> é um thriller que corta a linha tênue entre moralidade e sobrevivência.
-        </p>
-
-        <p class="mt-4 text-gray-300">
-          Até onde você iria para proteger seu segredo? <br/>
-          E se a única pergunta que pudesse salvá-lo fosse a que você jamais ousaria responder?
-        </p>
+        <div class="mt-6 space-y-4 text-gray-300 leading-relaxed">
+          <p><strong>No Brasil de 2040, a verdade não é mais uma virtude. É uma sentença.</strong></p>
+          <p><em>A verdade não liberta. Ela destrói.</em></p>
+          <p>
+            Em um futuro próximo, a mentira foi erradicada à força. O Fórum da Verdade — uma entidade de inteligência artificial implacável —
+            governa com punhos de ferro e perguntas afiadas como lâminas. Sua sentença? Uma única pergunta, sem direito a evasivas.
+            Responda com sinceridade ou encare a execução imediata. Ninguém sabe quem controla a máquina.
+          </p>
+          <p>
+            Quatro homens, ligados pelo passado se reencontram. Essa reunião revela segredos que o Fórum jamais ousaria permitir.
+          </p>
+          <p>
+            O que começa como uma noite de risos e lembranças se transforma em um abismo onde cada um deles tem algo a perder:
+            reputações, famílias, a própria sanidade. E o que escondem? Uma arma carregada apontada para tudo o que amam.
+          </p>
+          <p>
+            Quando o sistema os mira, precisam escolher: sacrificar a amizade para salvar a própria pele ou encarar o Fórum e ver quem cai primeiro?
+          </p>
+          <p>
+            <em>"A Verdade ou a Morte"</em> é um thriller que corta a linha tênue entre moralidade e sobrevivência.
+          </p>
+          <p><strong>Até onde você iria para proteger seu segredo?<br />E se a única pergunta que pudesse salvá-lo fosse a que você jamais ousaria responder?</strong></p>
+        </div>
 
         <div class="mt-6 p-6 border border-gray-800 rounded-xl">
-          <p class="italic text-gray-300">“A verdade não pertencia mais às pessoas. <strong>Pertencia à máquina</strong>.”</p>
+          <p class="italic text-gray-400">“A verdade não pertencia mais às pessoas. Pertencia à máquina.”</p>
         </div>
 
         <div class="mt-6 flex gap-3">
           <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
              target="_blank" rel="noopener"
-             class="bg-petroleum hover:bg-darkPetroleum text-white px-5 py-2.5 rounded-lg shadow-soft">Comprar na Amazon</a>
+             class="bg-petroleum hover:bg-darkPetroleum text-white px-5 py-2.5 rounded-lg">
+             Comprar na Amazon
+          </a>
+          <a href="#fragmentos" class="px-5 py-2.5 rounded-lg border border-gray-700 hover:border-gray-500">Ler fragmentos</a>
         </div>
       </div>
 
-      <div class="rounded-xl overflow-hidden shadow-soft">
+      <!-- Imagem à direita -->
+      <div class="md:col-span-5 rounded-xl overflow-hidden shadow-soft">
         <img src="images/3.png" alt="Arte do universo distópico do livro" class="w-full h-full object-cover" />
       </div>
     </div>
@@ -159,42 +162,53 @@
 
   <!-- FRAGMENTOS (imagem à esquerda, texto à direita) -->
   <section id="fragmentos" class="py-16 md:py-24 border-t border-gray-800 bg-black/30">
-    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-start">
-      <!-- Imagem à esquerda -->
-      <div class="rounded-xl overflow-hidden shadow-soft order-last lg:order-first">
-        <img src="images/4.png" alt="Ambiente do Fórum da Verdade" class="w-full h-full object-cover" />
+    <div class="container max-w-6xl grid lg:grid-cols-12 gap-10 items-start">
+      <!-- Imagem à esquerda em telas grandes -->
+      <div class="lg:col-span-5 rounded-xl overflow-hidden shadow-soft order-first">
+        <img src="images/4.png"
+             alt="Ambiente do Fórum da Verdade — A Verdade ou a Morte"
+             class="w-full h-full object-cover" />
       </div>
 
       <!-- Texto à direita -->
-      <div class="space-y-8 order-first lg:order-last">
-        <h2 class="text-3xl md:text-4xl font-bold">Fragmentos</h2>
+      <div class="lg:col-span-7 space-y-8">
+        <h2 class="section-title text-3xl md:text-4xl font-bold">Fragmentos</h2>
 
         <article class="border-l-4 border-petroleum pl-4">
           <h3 class="text-white font-semibold mb-2">Fragmento I — O Início</h3>
-          <p class="text-gray-300">“Eu nunca soube ao certo quando a verdade deixou de ser uma escolha. Sei apenas que, quando percebi, ela já havia se tornado uma sentença.”</p>
+          <p class="text-gray-300">
+            “Eu nunca soube ao certo quando a verdade deixou de ser uma escolha.
+            Sei apenas que, quando percebi, ela já havia se tornado uma sentença.”
+          </p>
         </article>
 
         <article class="border-l-4 border-petroleum pl-4">
           <h3 class="text-white font-semibold mb-2">Fragmento II — A Filha</h3>
-          <p class="text-gray-300">“Até que, aos 14 anos, tudo mudou. O afastamento veio como um golpe seco, sem aviso. Um dia, ele chegou do trabalho, e Rafaela já não correu para encontrá-lo. Foi até o quarto dela, bateu na porta.”</p>
+          <p class="text-gray-300">
+            “Até que, aos 14 anos, tudo mudou. O afastamento veio como um golpe seco, sem aviso.
+            Um dia, ele chegou do trabalho, e Rafaela já não correu para encontrá-lo. Foi até o quarto dela, bateu na porta.”
+          </p>
         </article>
 
         <article class="border-l-4 border-petroleum pl-4">
           <h3 class="text-white font-semibold mb-2">Fragmento III — O Fórum da Verdade</h3>
-          <p class="text-gray-300">“Apenas um segundo de silêncio, um desvio no olhar. Pequenos detalhes que, para uma máquina, eram tão reveladores quanto uma confissão aberta.”</p>
+          <p class="text-gray-300">
+            “Apenas um segundo de silêncio, um desvio no olhar. Pequenos detalhes que, para uma máquina,
+            eram tão reveladores quanto uma confissão aberta.”
+          </p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- UNIVERSO -->
+  <!-- O UNIVERSO -->
   <section id="universo" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold">O Universo</h2>
+    <div class="container max-w-6xl">
+      <h2 class="section-title text-3xl md:text-4xl font-bold">O Universo</h2>
       <div class="mt-6 grid md:grid-cols-3 gap-6">
         <div class="p-6 border border-gray-800 rounded-xl">
           <h3 class="text-xl text-white font-semibold">Fórum da Verdade</h3>
-          <p class="mt-2 text-gray-300">No Fórum, a IA e microexpressões definem veredictos binários. Sem contexto. Sem recurso. A sentença é imediata.</p>
+          <p class="mt-2 text-gray-300">No Fórum da Verdade, a IA e microexpressões definem veredictos binários. Sem contexto. Sem recurso. A sentença é imediata.</p>
         </div>
         <div class="p-6 border border-gray-800 rounded-xl">
           <h3 class="text-xl text-white font-semibold">Regra do Jogo</h3>
@@ -210,38 +224,57 @@
 
   <!-- AUTOR -->
   <section id="autor" class="py-16 md:py-24">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-      <div class="order-2 md:order-1">
-        <h2 class="text-3xl md:text-4xl font-bold">Felipe Mello — Criador do Universo</h2>
-        <p class="mt-4 text-gray-300 leading-relaxed">Felipe Mello é escritor e pensador brasileiro. Em <em>A Verdade ou a Morte</em>, cria um Brasil onde a consciência é julgada por máquinas e a moral é submetida à lógica. Seu trabalho mistura ética, poder e destino, aproximando a tradição da ficção distópica brasileira do thriller filosófico.</p>
+    <div class="container max-w-6xl grid md:grid-cols-12 gap-10 items-center">
+      <div class="md:order-1 md:col-span-7">
+        <h2 class="section-title text-3xl md:text-4xl font-bold">Felipe Mello — Criador do Universo da Verdade</h2>
+        <p class="mt-4 text-gray-300 leading-relaxed">
+          Felipe Mello é escritor e pensador brasileiro. Em <em>A Verdade ou a Morte</em>, cria um Brasil onde a consciência é julgada por máquinas e a moral é submetida à lógica.
+        </p>
+        <p class="mt-3 text-gray-400">
+          Com trajetória em liderança e tecnologia, constrói narrativas que misturam ética, poder e destino — abrindo um novo campo entre o romance filosófico e a ficção distópica.
+        </p>
+        <p class="mt-3 italic text-gray-400">
+          “Em um momento em que a polarização está demasiada, devemos defender a Verdade nas instituições.”
+        </p>
         <div class="mt-6 flex gap-3">
-          <a href="https://www.linkedin.com/in/mellofli/" target="_blank" rel="noopener" class="px-4 py-2.5 rounded-lg border border-gray-700 hover:border-gray-500">LinkedIn</a>
-          <a href="#novidades" class="px-4 py-2.5 rounded-lg bg-petroleum text-white hover:bg-darkPetroleum">Assinar novidades</a>
+          <a href="https://www.linkedin.com/in/mellofli/" target="_blank" rel="noopener"
+             class="px-4 py-2.5 rounded-lg border border-gray-700 hover:border-gray-500">LinkedIn</a>
+          <a href="#novidades"
+             class="px-4 py-2.5 rounded-lg bg-petroleum text-white hover:bg-darkPetroleum">Assinar novidades</a>
         </div>
       </div>
-      <div class="order-1 md:order-2 rounded-xl overflow-hidden shadow-soft text-center">
-        <img src="images/684790ab-b9d8-470c-ad21-264538db0df5.png" alt="Foto PB do autor Felipe Mello" class="w-full h-auto max-w-xs md:max-w-sm rounded-xl shadow-soft mx-auto" />
+      <div class="md:order-2 md:col-span-5 rounded-xl overflow-hidden shadow-soft text-center">
+        <img src="images/684790ab-b9d8-470c-ad21-264538db0df5.png"
+             alt="Foto PB do autor Felipe Mello"
+             class="w-full h-auto max-w-xs md:max-w-sm rounded-xl shadow-soft mx-auto" />
       </div>
     </div>
   </section>
 
   <!-- NOVIDADES -->
   <section id="novidades" class="py-16 md:py-24 bg-black/30 border-t border-gray-800">
-    <div class="max-w-3xl mx-auto text-center px-4">
-      <h2 class="text-3xl md:text-4xl font-bold">Novidades & Lançamentos</h2>
+    <div class="container max-w-3xl text-center">
+      <h2 class="section-title text-3xl md:text-4xl font-bold">Novidades & Lançamentos</h2>
       <p class="mt-4 text-gray-400">Cadastre seu e-mail para receber trechos inéditos, pré-venda e eventos (1x por mês, sem spam).</p>
 
-      <form action="https://formspree.io/f/mblpgnnn" method="POST"
+      <form id="newsletter-form"
+            action="https://formspree.io/f/mblpgnnn"
+            method="POST"
             class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-        <input name="email" type="email" required placeholder="seu@email.com"
+        <input id="email-news" name="email" required type="email" placeholder="seu@email.com"
                class="w-full sm:w-80 px-4 py-3 rounded-lg bg-night border border-gray-600 focus:outline-none focus:border-petroleum" />
+        <input type="hidden" name="_subject" value="Novo cadastro na newsletter — A Verdade ou a Morte" />
+        <input type="hidden" name="origem" value="newsletter_universo_averdadeouamorte" />
         <button type="submit" class="px-6 py-3 rounded-lg bg-petroleum text-white font-semibold hover:bg-darkPetroleum">Participar</button>
       </form>
 
-      <p class="text-xs text-gray-500 mt-2">No máximo 1 e-mail por mês. Sem spam, apenas verdades.</p>
+      <p class="text-xs text-gray-500 mt-2 text-center">
+        No máximo 1 e-mail por mês. Sem spam, apenas verdades.
+      </p>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="text-center py-8 border-t border-gray-800 text-gray-500">
     <p>© <span id="ano"></span> Universo A Verdade ou a Morte — Felipe Mello</p>
   </footer>
@@ -251,5 +284,3 @@
   </script>
 </body>
 </html>
-
-
