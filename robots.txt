@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# Evita indexar arquivos técnicos do site
+Disallow: /diff
+Disallow: /README
+Disallow: /LICENSE
+
+# Sitemap principal
 Sitemap: https://averdadeouamorte.com/sitemap.xml
