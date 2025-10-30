@@ -7,34 +7,36 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://averdadeouamorte.com/#livro</loc>
+    <loc>https://averdadeouamorte.com/livro</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://averdadeouamorte.com/#universo</loc>
-    <lastmod>2025-10-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://averdadeouamorte.com/#autor</loc>
+    <loc>https://averdadeouamorte.com/fragmentos</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://averdadeouamorte.com/#fragmentos</loc>
+    <loc>https://averdadeouamorte.com/universo</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://averdadeouamorte.com/#novidades</loc>
+    <loc>https://averdadeouamorte.com/autor</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://averdadeouamorte.com/novidades</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
+
+
 
