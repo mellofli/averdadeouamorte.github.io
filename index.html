@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- =============================
+       META BÁSICO
+  ============================== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>A Verdade ou a Morte – Universo oficial de Felipe Mello</title>
+
   <meta name="description" content="Thriller filosófico de Felipe Mello num Brasil distópico onde a verdade é obrigatória e a mentira, sentença. Explore o universo: livro, ideias e fragmentos." />
   <meta name="author" content="Felipe Mello" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://averdadeouamorte.com/" />
   <meta name="theme-color" content="#0f3b45" />
 
-  <!-- Open Graph -->
+  <!-- =============================
+       OPEN GRAPH / SOCIAL
+  ============================== -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="A Verdade ou a Morte" />
   <meta property="og:locale" content="pt_BR" />
@@ -20,10 +26,14 @@
   <meta property="og:image" content="https://averdadeouamorte.com/images/2.webp" />
   <meta property="og:url" content="https://averdadeouamorte.com/" />
 
-  <!-- Preload hero para otimizar LCP -->
-  <link rel="preload" as="image" href="images/2.webp" imagesrcset="images/2.webp" />
+  <!-- Preload da hero para manter percepção visual mesmo como background -->
+  <link rel="preload" as="image" href="images/2.webp" fetchpriority="high" />
 
+  <!-- =============================
+       ESTILOS (EXPANDIDOS, COMENTADOS)
+  ============================== -->
   <style>
+    /* Paleta e tokens */
     :root{
       --night:#0a0f1f;
       --night-80:rgba(10,15,31,.8);
@@ -35,113 +45,374 @@
       --border:#1f2937;
       --white:#ffffff;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
+
+    /* Reset simples */
+    *{ box-sizing:border-box; }
+    html, body{ height:100%; }
     body{
       margin:0;
-      font-family:"Arial Nova", Arial, "Helvetica Neue", Helvetica, sans-serif;
       background:var(--night);
       color:var(--ink);
+      font-family:"Arial Nova", Arial, "Helvetica Neue", Helvetica, sans-serif;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
       text-rendering:optimizeLegibility;
     }
-    img{max-width:100%;display:block;height:auto}
-    .container{max-width:1120px;margin:0 auto;padding:0 16px}
-    .narrow{max-width:720px;margin:0 auto}
-    .center{text-align:center}
+    img{
+      display:block;
+      max-width:100%;
+      height:auto;
+      border:none;
+    }
+    a{ color:inherit; text-decoration:none; }
 
-    /* Header */
-    .site-header{position:sticky;top:0;z-index:50;background:var(--night-80);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
-    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .brand{display:flex;gap:8px;align-items:center;text-decoration:none}
-    .brand span:first-child{color:#fff;font-weight:700;letter-spacing:.3px}
-    .brand span:last-child{color:var(--ink)}
-    .main-nav{display:none;gap:24px}
-    .main-nav a{color:var(--ink);text-decoration:none}
-    .main-nav a:hover{color:#fff}
-    .header-cta{display:none}
-    @media(min-width:768px){.main-nav{display:flex}.header-cta{display:inline-flex}}
+    /* Containers utilitários */
+    .container{
+      max-width:1120px;
+      margin:0 auto;
+      padding:0 16px;
+    }
+    .narrow{
+      max-width:720px;
+      margin:0 auto;
+    }
+    .center{ text-align:center; }
 
-    /* Buttons */
-    .btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .15s ease,background .15s ease,border .15s ease}
-    .btn-primary{background:var(--petroleum);color:#fff}
-    .btn-primary:hover{background:var(--darkPetroleum);transform:translateY(-2px)}
-    .btn-outline{border-color:#4b5563;color:var(--ink);background:transparent}
-    .btn-outline:hover{border-color:#6b7280}
-    .btn-ghost{background:rgba(255,255,255,.10);color:#fff;border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(6px)}
-    .btn-ghost:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.35)}
+    /* ==========================================
+       HEADER
+    ========================================== */
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:var(--night-80);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--border);
+    }
+    .header-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:12px 0;
+    }
+    .brand{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      font-weight:700;
+      letter-spacing:.2px;
+    }
+    .brand span:first-child{ color:#fff; }
+    .brand span:last-child{ color:var(--ink); }
 
-    /* Hero */
-    .hero{position:relative;overflow:hidden}
-    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.20}
-    .hero-overlay{position:absolute;inset:0;background:rgba(10,15,31,.55)}
-    .hero-content{position:relative;padding:64px 0}
-    @media(min-width:768px){.hero-content{padding:96px 0}}
-    .hero-title{font-size:40px;line-height:1.1;color:#fff;margin:8px 0 0}
-    @media(min-width:768px){.hero-title{font-size:64px}}
-    .hero-subtitle{margin-top:12px;color:#d1d5db;max-width:640px}
-    .hero-actions{display:flex;gap:12px;margin-top:24px;flex-direction:column}
-    @media(min-width:640px){.hero-actions{flex-direction:row}}
+    .main-nav{
+      display:none;
+      gap:24px;
+    }
+    .main-nav a{
+      color:var(--ink);
+      transition:color .15s ease;
+    }
+    .main-nav a:hover{ color:#fff; }
 
-    .quote{font-size:20px;line-height:1.5;font-weight:700;margin:0 0 16px;color:var(--ink);max-width:750px}
-    .quote small{display:block;margin-top:8px;font-weight:400;font-size:14px;color:var(--steel)}
+    .header-cta{ display:none; }
 
-    /* Sections */
-    .section{padding:64px 0}
-    .section-alt{padding:64px 0;border-top:1px solid var(--border);background:rgba(0,0,0,.30)}
-    .section-title{font-size:32px;font-weight:800;color:var(--deepCyanMist);margin:0}
-    @media(min-width:768px){.section-title{font-size:40px}}
+    @media (min-width:768px){
+      .main-nav{ display:flex; }
+      .header-cta{ display:inline-flex; }
+    }
 
-    .grid{display:grid;gap:32px;align-items:start}
-    .grid-2{grid-template-columns:1fr}
-    @media(min-width:960px){.grid-2{grid-template-columns:7fr 5fr}}
+    /* Botões */
+    .btn{
+      display:inline-block;
+      padding:12px 20px;
+      border-radius:10px;
+      border:1px solid transparent;
+      cursor:pointer;
+      transition:transform .15s ease, background .15s ease, border .15s ease;
+    }
+    .btn-primary{
+      background:var(--petroleum);
+      color:#fff;
+    }
+    .btn-primary:hover{
+      background:var(--darkPetroleum);
+      transform:translateY(-2px);
+    }
+    .btn-outline{
+      border-color:#4b5563;
+      color:var(--ink);
+      background:transparent;
+    }
+    .btn-outline:hover{ border-color:#6b7280; }
+    .btn-ghost{
+      background:rgba(255,255,255,.10);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.25);
+      backdrop-filter:blur(6px);
+    }
+    .btn-ghost:hover{
+      background:rgba(255,255,255,.18);
+      border-color:rgba(255,255,255,.35);
+    }
 
-    .prose{margin-top:18px;color:#d1d5db;line-height:1.75}
-    .muted{color:#9ca3af}
-    .italic{font-style:italic}
-    .actions{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+    /* ==========================================
+       HERO como BACKGROUND (não vira LCP)
+    ========================================== */
+    .hero{
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image:url("images/2.webp");
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      opacity:.20;
+      will-change:transform;
+    }
+    .hero-overlay{
+      position:absolute;
+      inset:0;
+      background:rgba(10,15,31,.55);
+    }
+    .hero-content{
+      position:relative;
+      padding:64px 0;
+    }
+    @media (min-width:768px){
+      .hero-content{ padding:96px 0; }
+    }
 
-    .callout{margin-top:20px;padding:24px;border:1px solid var(--border);border-radius:14px}
-    .callout p{margin:0;color:#cbd5e1;font-style:italic}
+    .quote{
+      font-size:20px;
+      line-height:1.5;
+      font-weight:700;
+      margin:0 0 16px;
+      color:var(--ink);
+      max-width:750px;
+    }
+    .quote small{
+      display:block;
+      margin-top:8px;
+      font-weight:400;
+      font-size:14px;
+      color:var(--steel);
+    }
 
-    .media{border-radius:16px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.35)}
-    .media img{width:100%;height:auto}
+    .hero-title{
+      font-size:40px;
+      line-height:1.1;
+      color:#fff;
+      margin:8px 0 0;
+      font-weight:800;
+    }
+    @media (min-width:768px){
+      .hero-title{ font-size:64px; }
+    }
+
+    .hero-subtitle{
+      margin-top:12px;
+      color:#d1d5db;
+      max-width:640px;
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:12px;
+      margin-top:24px;
+      flex-direction:column;
+    }
+    @media (min-width:640px){
+      .hero-actions{ flex-direction:row; }
+    }
+
+    /* ==========================================
+       SEÇÕES
+    ========================================== */
+    .section{
+      padding:64px 0;
+    }
+    .section-alt{
+      padding:64px 0;
+      border-top:1px solid var(--border);
+      background:rgba(0,0,0,.30);
+    }
+    .section-title{
+      font-size:32px;
+      font-weight:800;
+      color:var(--deepCyanMist);
+      margin:0 0 8px 0;
+    }
+    @media (min-width:768px){
+      .section-title{ font-size:40px; }
+    }
+
+    .grid{
+      display:grid;
+      gap:32px;
+      align-items:start;
+    }
+    .grid-2{
+      grid-template-columns:1fr;
+    }
+    @media (min-width:960px){
+      .grid-2{ grid-template-columns:7fr 5fr; }
+    }
+
+    .prose{
+      margin-top:18px;
+      color:#d1d5db;
+      line-height:1.75;
+    }
+    .muted{ color:#9ca3af; }
+    .italic{ font-style:italic; }
+    .actions{
+      margin-top:24px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .callout{
+      margin-top:20px;
+      padding:24px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:rgba(255,255,255,.02);
+    }
+    .callout p{
+      margin:0;
+      color:#cbd5e1;
+      font-style:italic;
+    }
+
+    .media{
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 10px 40px rgba(0,0,0,.35);
+    }
+    .media img{
+      width:100%;
+      height:auto;
+    }
 
     /* Fragmentos */
-    .stack{display:flex;flex-direction:column;gap:24px}
-    .fragment{padding-left:16px;border-left:4px solid var(--petroleum)}
-    .fragment h3{margin:0 0 8px;color:#fff;font-weight:700}
-    .fragment p{margin:0;color:#d1d5db}
+    .stack{
+      display:flex;
+      flex-direction:column;
+      gap:24px;
+    }
+    .fragment{
+      padding-left:16px;
+      border-left:4px solid var(--petroleum);
+    }
+    .fragment h3{
+      margin:0 0 8px;
+      color:#fff;
+      font-weight:700;
+    }
+    .fragment p{
+      margin:0;
+      color:#d1d5db;
+    }
 
-    /* Cards */
-    .cards{display:grid;grid-template-columns:1fr;gap:18px;margin-top:24px}
-    @media(min-width:768px){.cards{grid-template-columns:repeat(3,1fr)}}
-    .card{padding:24px;border:1px solid var(--border);border-radius:14px}
-    .card h3{margin:0 0 8px;color:#fff}
-    .card p{margin:0;color:#d1d5db}
+    /* Cards do Universo */
+    .cards{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+      margin-top:24px;
+    }
+    @media (min-width:768px){
+      .cards{ grid-template-columns:repeat(3,1fr); }
+    }
+    .card{
+      padding:24px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:transparent;
+    }
+    .card h3{
+      margin:0 0 8px;
+      color:#fff;
+    }
+    .card p{
+      margin:0;
+      color:#d1d5db;
+    }
 
     /* Autor */
-    .author-photo{width:100%;max-width:360px;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.35);margin:0 auto}
+    .author-photo{
+      width:100%;
+      max-width:360px;
+      border-radius:16px;
+      box-shadow:0 10px 40px rgba(0,0,0,.35);
+      margin:0 auto;
+    }
 
-    /* Newsletter */
-    .newsletter-form{margin-top:24px;display:flex;gap:12px;flex-direction:column;justify-content:center;align-items:center}
-    .newsletter-form input[type="email"]{width:100%;max-width:320px;padding:12px 14px;border-radius:10px;background:var(--night);border:1px solid #4b5563;color:#e5e7eb;outline:none}
-    .newsletter-form input[type="email"]:focus{border-color:var(--petroleum)}
-    .tiny{font-size:12px;margin-top:8px}
+    /* Newsletter centralizada */
+    .newsletter-form{
+      margin-top:24px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+    }
+    .newsletter-fields{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      gap:12px;
+      margin-top:16px;
+    }
+    @media (min-width:640px){
+      .newsletter-fields{ flex-direction:row; }
+    }
+    .newsletter-fields input[type="email"]{
+      width:100%;
+      max-width:360px;
+      padding:12px 14px;
+      border-radius:10px;
+      background:var(--night);
+      border:1px solid #4b5563;
+      color:#e5e7eb;
+      outline:none;
+      text-align:center;
+    }
+    .newsletter-fields input[type="email"]:focus{
+      border-color:var(--petroleum);
+    }
+    .tiny{
+      font-size:12px;
+      margin-top:8px;
+    }
 
-    /* Footer */
-    .site-footer{padding:24px;text-align:center;border-top:1px solid var(--border);color:#9ca3af}
+    /* Rodapé */
+    .site-footer{
+      padding:24px;
+      text-align:center;
+      border-top:1px solid var(--border);
+      color:#9ca3af;
+    }
   </style>
 </head>
 
 <body>
-  <!-- HEADER -->
+  <!-- ==========================================
+       HEADER
+  =========================================== -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="#" class="brand" aria-label="Universo A Verdade ou a Morte – Felipe Mello">
-        <span>Universo</span><span>A Verdade ou a Morte</span>
+        <span>Universo</span>
+        <span>A Verdade ou a Morte</span>
       </a>
+
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="#livro">O Livro</a>
         <a href="#universo">O Universo</a>
@@ -149,42 +420,60 @@
         <a href="#fragmentos">Fragmentos</a>
         <a href="#novidades">Novidades</a>
       </nav>
-      <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
-         target="_blank" rel="noopener"
-         class="btn btn-primary header-cta">Comprar na Amazon</a>
+
+      <a
+        href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary header-cta"
+      >
+        Comprar na Amazon
+      </a>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- ==========================================
+       HERO (BG CSS + overlay)
+  =========================================== -->
   <section class="hero">
-    <img src="images/2.webp" alt="Capa do livro A Verdade ou a Morte" class="hero-bg"
-         loading="eager" decoding="async" />
     <div class="hero-overlay"></div>
 
     <div class="container hero-content">
       <div class="narrow">
         <blockquote class="quote">
-          “Cada sociedade tem seu regime de verdade, sua ‘política geral’ de verdade: os tipos de discursos que ela aceita e faz funcionar como verdadeiros.”
+          “Cada sociedade tem seu regime de verdade, sua ‘política geral’ de verdade:
+          os tipos de discursos que ela aceita e faz funcionar como verdadeiros.”
           <small>— Michel Foucault (1926 – 1984)</small>
         </blockquote>
 
         <h1 class="hero-title">A Verdade ou a Morte</h1>
+
         <p class="hero-subtitle">
-          Portal oficial do universo criado por Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a consciência humana à máquina.
-          Este é o mapa desse mundo: livros, ideias e destinos.
+          Portal oficial do universo criado por Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a
+          consciência humana à máquina. Este é o mapa desse mundo: livros, ideias e destinos.
         </p>
 
         <div class="hero-actions">
-          <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
-             target="_blank" rel="noopener"
-             class="btn btn-primary">Comprar na Amazon</a>
-          <a href="#universo" class="btn btn-ghost">Conheça o Universo</a>
+          <a
+            href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+          >
+            Comprar na Amazon
+          </a>
+
+          <a href="#universo" class="btn btn-ghost">
+            Conheça o Universo
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- O LIVRO -->
+  <!-- ==========================================
+       O LIVRO
+  =========================================== -->
   <section id="livro" class="section">
     <div class="container grid grid-2">
       <!-- Texto -->
@@ -193,26 +482,44 @@
 
         <div class="prose">
           <p><strong>No Brasil de 2040, a verdade não é mais uma virtude. É uma sentença.</strong></p>
+
           <p><em>A verdade não liberta. Ela destrói.</em></p>
+
           <p>
-            Em um futuro próximo, a mentira foi erradicada à força. O Fórum da Verdade — uma entidade de inteligência artificial implacável —
-            governa com punhos de ferro e perguntas afiadas como lâminas. Sua sentença? Uma única pergunta, sem direito a evasivas.
+            Em um futuro próximo, a mentira foi erradicada à força.
+            O Fórum da Verdade — uma entidade de inteligência artificial implacável —
+            governa com punhos de ferro e perguntas afiadas como lâminas.
+            Sua sentença? Uma única pergunta, sem direito a evasivas.
             Responda com sinceridade ou encare a execução imediata. Ninguém sabe quem controla a máquina.
           </p>
+
           <p>
-            Quatro homens, ligados pelo passado se reencontram. Essa reunião revela segredos que o Fórum jamais ousaria permitir.
+            Quatro homens, ligados pelo passado se reencontram.
+            Essa reunião revela segredos que o Fórum jamais ousaria permitir.
           </p>
+
           <p>
-            O que começa como uma noite de risos e lembranças se transforma em um abismo onde cada um deles tem algo a perder:
-            reputações, famílias, a própria sanidade. E o que escondem? Uma arma carregada apontada para tudo o que amam.
+            O que começa como uma noite de risos e lembranças se transforma em um abismo
+            onde cada um deles tem algo a perder: reputações, famílias, a própria sanidade.
+            E o que escondem? Uma arma carregada apontada para tudo o que amam.
           </p>
+
           <p>
-            Quando o sistema os mira, precisam escolher: sacrificar a amizade para salvar a própria pele ou encarar o Fórum e ver quem cai primeiro?
+            Quando o sistema os mira, precisam escolher: sacrificar a amizade para salvar a própria pele
+            ou encarar o Fórum e ver quem cai primeiro?
           </p>
+
           <p>
             <em>"A Verdade ou a Morte"</em> é um thriller que corta a linha tênue entre moralidade e sobrevivência.
           </p>
-          <p><strong>Até onde você iria para proteger seu segredo?<br />E se a única pergunta que pudesse salvá-lo fosse a que você jamais ousaria responder?</strong></p>
+
+          <p>
+            <strong>
+              Até onde você iria para proteger seu segredo?
+              <br />
+              E se a única pergunta que pudesse salvá-lo fosse a que você jamais ousaria responder?
+            </strong>
+          </p>
         </div>
 
         <div class="callout">
@@ -220,29 +527,44 @@
         </div>
 
         <div class="actions">
-          <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
-             target="_blank" rel="noopener"
-             class="btn btn-primary">Comprar na Amazon</a>
+          <a
+            href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+          >
+            Comprar na Amazon
+          </a>
+
           <a href="#fragmentos" class="btn btn-outline">Ler fragmentos</a>
         </div>
       </div>
 
       <!-- Imagem -->
       <div class="media">
-        <img src="images/3.webp" alt="Arte do universo distópico do livro"
-             loading="lazy" decoding="async" />
+        <img
+          src="images/3.webp"
+          alt="Arte do universo distópico do livro"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     </div>
   </section>
 
-  <!-- FRAGMENTOS -->
+  <!-- ==========================================
+       FRAGMENTOS
+  =========================================== -->
   <section id="fragmentos" class="section section-alt">
     <div class="container grid grid-2">
       <!-- Imagem esquerda -->
       <div class="media">
-        <img src="images/4.webp"
-             alt="Ambiente do Fórum da Verdade — A Verdade ou a Morte"
-             loading="lazy" decoding="async" />
+        <img
+          src="images/4.webp"
+          alt="Ambiente do Fórum da Verdade — A Verdade ou a Morte"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
 
       <!-- Texto direita -->
@@ -276,85 +598,169 @@
     </div>
   </section>
 
-  <!-- O UNIVERSO -->
+  <!-- ==========================================
+       O UNIVERSO
+  =========================================== -->
   <section id="universo" class="section section-alt">
     <div class="container">
       <h2 class="section-title">O Universo</h2>
+
       <div class="cards">
         <div class="card">
           <h3>Fórum da Verdade</h3>
-          <p>No Fórum da Verdade, a IA e microexpressões definem veredictos binários. Sem contexto. Sem recurso. A sentença é imediata.</p>
+          <p>
+            No Fórum da Verdade, a IA e microexpressões definem veredictos binários.
+            Sem contexto. Sem recurso. A sentença é imediata.
+          </p>
         </div>
+
         <div class="card">
           <h3>Regra do Jogo</h3>
-          <p>Cada cidadão faz 1 pergunta por ano; pode ser interrogado 3 vezes. A mentira custa a vida.</p>
+          <p>
+            Cada cidadão faz 1 pergunta por ano; pode ser interrogado 3 vezes.
+            A mentira custa a vida.
+          </p>
         </div>
+
         <div class="card">
           <h3>Linhas de Destino</h3>
-          <p>Daniel, Rafaela, Isabela, Tomé — vidas cruzadas por um país que trocou séculos de mentiras pela verdade.</p>
+          <p>
+            Daniel, Rafaela, Isabela, Tomé — vidas cruzadas por um país que trocou
+            séculos de mentiras pela verdade.
+          </p>
         </div>
       </div>
+
+      <!-- ======================================
+           SUBSEÇÃO: O QUE VEM AÍ (somente títulos)
+      ======================================= -->
+      <div class="narrow" style="margin-top:40px">
+        <h3 class="section-title" style="font-size:28px">O que vem aí</h3>
+
+        <ul style="list-style:none; display:grid; gap:12px; margin:8px 0 0 0; padding:0;">
+          <li class="card" style="padding:16px;">
+            <strong>A Verdade ou a Morte — Na Sala Fria</strong>
+          </li>
+          <li class="card" style="padding:16px;">
+            <strong>A Verdade ou a Morte — Entre os Muros</strong>
+          </li>
+          <li class="card" style="padding:16px;">
+            <strong>A Verdade ou a Morte — O que o Futuro nos traz</strong>
+          </li>
+        </ul>
+      </div>
+      <!-- /SUBSEÇÃO -->
     </div>
   </section>
 
-  <!-- AUTOR -->
+  <!-- ==========================================
+       AUTOR
+  =========================================== -->
   <section id="autor" class="section">
     <div class="container grid grid-2">
       <div>
         <h2 class="section-title">Felipe Mello — Criador do Universo da Verdade</h2>
+
         <p class="prose">
-          Felipe Mello é escritor e pensador brasileiro. Em <em>A Verdade ou a Morte</em>, cria um Brasil onde a consciência é julgada por máquinas e a moral é submetida à lógica.
+          Felipe Mello é escritor e pensador brasileiro. Em <em>A Verdade ou a Morte</em>,
+          cria um Brasil onde a consciência é julgada por máquinas e a moral é submetida à lógica.
         </p>
+
         <p class="muted">
-          Com trajetória em liderança e tecnologia, constrói narrativas que misturam ética, poder e destino — abrindo um novo campo entre o romance filosófico e a ficção distópica.
+          Com trajetória em liderança e tecnologia, constrói narrativas que misturam ética, poder e destino —
+          abrindo um novo campo entre o romance filosófico e a ficção distópica.
         </p>
+
         <p class="muted italic">
           “Em um momento em que a polarização está demasiada, devemos defender a Verdade nas instituições.”
         </p>
+
         <div class="actions">
-          <a href="https://www.linkedin.com/in/mellofli/" target="_blank" rel="noopener"
-             class="btn btn-outline">LinkedIn</a>
+          <a
+            href="https://www.linkedin.com/in/mellofli/"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-outline"
+          >LinkedIn</a>
+
           <a href="#novidades" class="btn btn-primary">Assinar novidades</a>
         </div>
       </div>
+
       <div class="media">
-        <img src="images/684790ab-b9d8-470c-ad21-264538db0df5.webp"
-             alt="Foto PB do autor Felipe Mello"
-             class="author-photo"
-             loading="lazy" decoding="async" />
+        <img
+          src="images/684790ab-b9d8-470c-ad21-264538db0df5.webp"
+          alt="Foto PB do autor Felipe Mello"
+          class="author-photo"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     </div>
   </section>
 
-  <!-- NOVIDADES -->
+  <!-- ==========================================
+       NOVIDADES
+  =========================================== -->
   <section id="novidades" class="section section-alt">
-    <div class="container narrow">
+    <div class="container narrow center">
       <h2 class="section-title">Novidades &amp; Lançamentos</h2>
-      <p class="muted center">Cadastre seu e-mail para receber trechos inéditos, pré-venda e eventos (1x por mês, sem spam).</p>
 
-      <form id="newsletter-form"
-            action="https://formspree.io/f/mblpgnnn"
-            method="POST"
-            class="newsletter-form">
-        <input id="email-news" name="email" required type="email" placeholder="seu@email.com" />
-        <input type="hidden" name="_subject" value="Novo cadastro na newsletter — A Verdade ou a Morte" />
-        <input type="hidden" name="origem" value="newsletter_universo_averdadeouamorte" />
-        <button type="submit" class="btn btn-primary">Participar</button>
+      <p class="muted">
+        Cadastre seu e-mail para receber trechos inéditos, pré-venda e eventos (1x por mês, sem spam).
+      </p>
+
+      <form
+        id="newsletter-form"
+        action="https://formspree.io/f/mblpgnnn"
+        method="POST"
+        class="newsletter-form"
+        novalidate
+      >
+        <div class="newsletter-fields">
+          <input
+            id="email-news"
+            name="email"
+            required
+            type="email"
+            placeholder="seu@email.com"
+            inputmode="email"
+            autocomplete="email"
+          />
+          <button type="submit" class="btn btn-primary">Participar</button>
+        </div>
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="Novo cadastro na newsletter — A Verdade ou a Morte"
+        />
+        <input
+          type="hidden"
+          name="origem"
+          value="newsletter_universo_averdadeouamorte"
+        />
       </form>
 
-      <p class="tiny muted center">No máximo 1 e-mail por mês. Sem spam, apenas verdades.</p>
+      <p class="tiny muted">
+        No máximo 1 e-mail por mês. Sem spam, apenas verdades.
+      </p>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ==========================================
+       RODAPÉ
+  =========================================== -->
   <footer class="site-footer">
     <p>© <span id="ano"></span> Universo A Verdade ou a Morte — Felipe Mello</p>
   </footer>
 
+  <!-- JS mínimo: ano dinâmico -->
   <script>
     document.getElementById('ano').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
+
 
 
