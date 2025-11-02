@@ -1,8 +1,10 @@
 User-agent: *
 Allow: /
 
-# Evita indexar arquivos técnicos do site
-Disallow: /diff
+# Bloqueios preventivos (pastas técnicas)
+Disallow: /assets/
+Disallow: /scripts/
+Disallow: /diff/
 Disallow: /README
 Disallow: /LICENSE
 
