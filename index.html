@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGKENMSYKV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MGKENMSYKV');
+  </script>
+
   <!-- =============================
        META BÁSICO
   ============================== -->
@@ -15,6 +24,9 @@
   <link rel="canonical" href="https://averdadeouamorte.com/" />
   <meta name="theme-color" content="#0f3b45" />
 
+  <!-- Palavras-chave para coerência com KDP -->
+  <meta name="keywords" content="distopia brasileira futurista, ficção política sobre a verdade, romance distópico brasileiro, governo autoritário distopia, justiça inteligência artificial, thriller social e jurídico, livros estilo 1984 Orwell">
+
   <!-- =============================
        OPEN GRAPH / SOCIAL
   ============================== -->
@@ -28,6 +40,42 @@
 
   <!-- Preload da hero para manter percepção visual mesmo como background -->
   <link rel="preload" as="image" href="images/2.webp" fetchpriority="high" />
+
+  <!-- =============================
+       DADOS ESTRUTURADOS (JSON-LD)
+  ============================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "A Verdade ou a Morte",
+    "author": { "@type": "Person", "name": "Felipe Mello" },
+    "url": "https://averdadeouamorte.com/",
+    "inLanguage": "pt-BR",
+    "genre": ["Ficção política","Distopia","Thriller"],
+    "description": "Thriller filosófico ambientado em um Brasil distópico onde a verdade é obrigatória e a mentira, sentença.",
+    "image": "https://averdadeouamorte.com/images/2.webp",
+    "sameAs": ["https://www.amazon.com.br/dp/B0FS7ZB38L"],
+    "workExample": {
+      "@type": "Book",
+      "bookFormat": "EBook",
+      "url": "https://www.amazon.com.br/dp/B0FS7ZB38L"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "A Verdade ou a Morte",
+    "url": "https://averdadeouamorte.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.google.com/search?q=A+Verdade+ou+a+Morte+Felipe+Mello+{query}",
+      "query-input": "required name=query"
+    }
+  }
+  </script>
 
   <!-- =============================
        ESTILOS (EXPANDIDOS, COMENTADOS)
@@ -463,7 +511,7 @@
             Comprar na Amazon
           </a>
 
-          <a href="#universo" class="btn btn-ghost">
+        <a href="#universo" class="btn btn-ghost">
             Conheça o Universo
           </a>
         </div>
