@@ -23,7 +23,7 @@
   <link rel="canonical" href="https://averdadeouamorte.com/" />
   <meta name="theme-color" content="#0f3b45" />
 
-  <!-- Palavras-chave para coerência com KDP -->
+  <!-- Palavras-chave (coerentes com KDP, sem exageros) -->
   <meta name="keywords" content="distopia brasileira futurista, ficção política sobre a verdade, romance distópico brasileiro, governo autoritário distopia, justiça inteligência artificial, thriller social e jurídico, livros estilo 1984 Orwell">
 
   <!-- =============================
@@ -35,6 +35,7 @@
   <meta property="og:title" content="A Verdade ou a Morte – Universo oficial de Felipe Mello" />
   <meta property="og:description" content="No Brasil de 2040, o Fórum da Verdade decide entre vida e morte. Conheça o universo criado por Felipe Mello." />
   <meta property="og:image" content="https://averdadeouamorte.com/images/2.webp" />
+  <meta property="og:image:alt" content="Arte do universo distópico de A Verdade ou a Morte, com arquitetura futurista e luz azul ciano." />
   <meta property="og:url" content="https://averdadeouamorte.com/" />
 
   <!-- Twitter Cards -->
@@ -42,6 +43,7 @@
   <meta name="twitter:title" content="A Verdade ou a Morte – Universo oficial de Felipe Mello">
   <meta name="twitter:description" content="Thriller filosófico distópico no Brasil de 2040. Conheça o universo do livro.">
   <meta name="twitter:image" content="https://averdadeouamorte.com/images/2.webp">
+  <meta name="twitter:image:alt" content="Arte do universo distópico de A Verdade ou a Morte, com arquitetura futurista e luz azul ciano.">
 
   <!-- hreflang (auto-referência) -->
   <link rel="alternate" href="https://averdadeouamorte.com/" hreflang="pt-br" />
@@ -85,7 +87,8 @@
     "url":"https://averdadeouamorte.com/",
     "sameAs":[
       "https://www.linkedin.com/in/mellofli/",
-      "https://www.amazon.com.br/dp/B0FS7ZB38L"
+      "https://www.amazon.com.br/dp/B0FS7ZB38L",
+      "https://www.instagram.com/felipemello.oficial/"
     ],
     "jobTitle":"Autor",
     "nationality":"BR",
@@ -108,8 +111,50 @@
   }
   </script>
 
+  <!-- CollectionPage (curadoria: Ecossistema & Reflexões) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Ecossistema & Reflexões",
+    "url":"https://averdadeouamorte.com/#ecosistema",
+    "about":["Filosofia","Ética","Distopia","Inteligência Artificial"],
+    "isPartOf":{"@type":"WebSite","url":"https://averdadeouamorte.com/"},
+    "mainEntity":{
+      "@type":"ItemList",
+      "itemListElement":[
+        {
+          "@type":"ListItem","position":1,
+          "item":{"@type":"CreativeWork","name":"Substack — Reflexão: “A Verdade como Sentença”",
+                  "url":"https://substack.com/@fmello1/note/p-177825910?r=6sdo2m&utm_source=notes-share-action&utm_medium=web"}
+        },
+        {
+          "@type":"ListItem","position":2,
+          "item":{"@type":"WebPage","name":"Filosofia na Escola",
+                  "url":"https://filosofianaescola.com/"}
+        },
+        {
+          "@type":"ListItem","position":3,
+          "item":{"@type":"WebPage","name":"Helkein",
+                  "url":"https://helkein.com.br/"}
+        },
+        {
+          "@type":"ListItem","position":4,
+          "item":{"@type":"WebPage","name":"Filosofia Pop",
+                  "url":"https://filosofiapop.com.br/"}
+        },
+        {
+          "@type":"ListItem","position":5,
+          "item":{"@type":"WebPage","name":"Amazon Livros — Filosofia",
+                  "url":"https://www.amazon.com.br/gp/browse.html?node=6740748011"}
+        }
+      ]
+    }
+  }
+  </script>
+
   <!-- =============================
-       ESTILOS (EXPANDIDOS, COMENTADOS)
+       ESTILOS
   ============================== -->
   <style>
     /* Paleta e tokens */
@@ -129,20 +174,12 @@
     *{ box-sizing:border-box; }
     html, body{ height:100%; }
     body{
-      margin:0;
-      background:var(--night);
-      color:var(--ink);
+      margin:0; background:var(--night); color:var(--ink);
       font-family:"Arial Nova", Arial, "Helvetica Neue", Helvetica, sans-serif;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
       text-rendering:optimizeLegibility;
     }
-    img{
-      display:block;
-      max-width:100%;
-      height:auto;
-      border:none;
-    }
+    img{ display:block; max-width:100%; height:auto; border:none; }
     a{ color:inherit; text-decoration:none; }
 
     /* Containers utilitários */
@@ -150,9 +187,7 @@
     .narrow{ max-width:720px; margin:0 auto; }
     .center{ text-align:center; }
 
-    /* ==========================================
-       HEADER
-    ========================================== */
+    /* HEADER */
     .site-header{
       position:sticky; top:0; z-index:50;
       background:var(--night-80); backdrop-filter:blur(8px);
@@ -188,9 +223,7 @@
     }
     .btn-ghost:hover{ background:rgba(255,255,255,.18); border-color:rgba(255,255,255,.35); }
 
-    /* ==========================================
-       HERO como BACKGROUND (não vira LCP)
-    ========================================== */
+    /* HERO (background não conta para LCP) */
     .hero{ position:relative; overflow:hidden; }
     .hero::before{
       content:""; position:absolute; inset:0;
@@ -211,9 +244,7 @@
     .hero-actions{ display:flex; gap:12px; margin-top:24px; flex-direction:column; }
     @media (min-width:640px){ .hero-actions{ flex-direction:row; } }
 
-    /* ==========================================
-       SEÇÕES
-    ========================================== */
+    /* SEÇÕES */
     .section{ padding:64px 0; }
     .section-alt{ padding:64px 0; border-top:1px solid var(--border); background:rgba(0,0,0,.30); }
     .section-title{ font-size:32px; font-weight:800; color:var(--deepCyanMist); margin:0 0 8px 0; }
@@ -240,7 +271,7 @@
     .fragment h3{ margin:0 0 8px; color:#fff; font-weight:700; }
     .fragment p{ margin:0; color:#d1d5db; }
 
-    /* Cards do Universo */
+    /* Cards */
     .cards{ display:grid; grid-template-columns:1fr; gap:18px; margin-top:24px; }
     @media (min-width:768px){ .cards{ grid-template-columns:repeat(3,1fr); } }
     .card{ padding:24px; border:1px solid var(--border); border-radius:14px; background:transparent; }
@@ -248,9 +279,7 @@
     .card p{ margin:0; color:#d1d5db; }
 
     /* Autor */
-    .author-photo{
-      width:100%; max-width:360px; border-radius:16px; box-shadow:0 10px 40px rgba(0,0,0,.35); margin:0 auto;
-    }
+    .author-photo{ width:100%; max-width:360px; border-radius:16px; box-shadow:0 10px 40px rgba(0,0,0,.35); margin:0 auto; }
 
     /* Newsletter */
     .newsletter-form{ margin-top:24px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
@@ -262,20 +291,22 @@
     .newsletter-fields input[type="email"]:focus{ border-color:var(--petroleum); }
     .tiny{ font-size:12px; margin-top:8px; }
 
+    /* Links list (Ecossistema) */
+    .link-list{ margin:0; padding-left:16px; display:flex; flex-direction:column; gap:8px; }
+    .link-list a{ color:var(--ink); transition:color .15s ease; }
+    .link-list a:hover{ color:#fff; text-decoration:underline; }
+
     /* Rodapé */
     .site-footer{ padding:24px; text-align:center; border-top:1px solid var(--border); color:#9ca3af; }
   </style>
 </head>
 
 <body>
-  <!-- ==========================================
-       HEADER
-  =========================================== -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="#" class="brand" aria-label="Universo A Verdade ou a Morte – Felipe Mello">
-        <span>Universo</span>
-        <span>A Verdade ou a Morte</span>
+        <span>Universo</span><span>A Verdade ou a Morte</span>
       </a>
 
       <nav class="main-nav" aria-label="Navegação principal">
@@ -286,23 +317,15 @@
         <a href="#novidades">Novidades</a>
       </nav>
 
-      <a
-        href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
-        target="_blank"
-        rel="noopener"
-        class="btn btn-primary header-cta"
-      >
+      <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/" target="_blank" rel="noopener noreferrer" class="btn btn-primary header-cta">
         Comprar na Amazon
       </a>
     </div>
   </header>
 
-  <!-- ==========================================
-       HERO (BG CSS + overlay)
-  =========================================== -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-overlay"></div>
-
     <div class="container hero-content">
       <div class="narrow">
         <blockquote class="quote">
@@ -312,44 +335,29 @@
         </blockquote>
 
         <h1 class="hero-title">A Verdade ou a Morte</h1>
-
         <p class="hero-subtitle">
           Portal oficial do universo criado por Felipe Mello. No Brasil de 2040, o Fórum da Verdade submete a
           consciência humana à máquina. Este é o mapa desse mundo: livros, ideias e destinos.
         </p>
 
         <div class="hero-actions">
-          <a
-            href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-primary"
-          >
+          <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             Comprar na Amazon
           </a>
-
-          <a href="#universo" class="btn btn-ghost">
-            Conheça o Universo
-          </a>
+          <a href="#universo" class="btn btn-ghost">Conheça o Universo</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       O LIVRO
-  =========================================== -->
+  <!-- O LIVRO -->
   <section id="livro" class="section">
     <div class="container grid grid-2">
-      <!-- Texto -->
       <div>
         <h2 class="section-title">O Livro</h2>
-
         <div class="prose">
           <p><strong>No Brasil de 2040, a verdade não é mais uma virtude. É uma sentença.</strong></p>
-
           <p><em>A verdade não liberta. Ela destrói.</em></p>
-
           <p>
             Em um futuro próximo, a mentira foi erradicada à força.
             O <strong>Fórum da Verdade</strong> — uma entidade de <em>inteligência artificial implacável</em> —
@@ -358,32 +366,22 @@
             Responda com sinceridade ou encare a execução imediata. Ninguém sabe quem controla a máquina —
             apenas que o <em>governo autoritário</em> aceita seus veredictos sem contestação.
           </p>
-
           <p>
             Quatro homens, ligados pelo passado, se reencontram. Essa reunião revela segredos que o Fórum jamais ousaria permitir.
             O que começa como uma noite de risos e lembranças se transforma em um abismo
             onde cada um tem algo a perder: reputações, famílias, a própria sanidade.
           </p>
-
           <p>
             E o que escondem? Uma arma carregada apontada para tudo o que amam.
             Quando o sistema os mira, precisam escolher: sacrificar a amizade para salvar a própria pele
             ou encarar o Fórum e ver quem cai primeiro?
           </p>
-
           <p>
             <em>A Verdade ou a Morte</em> é um <strong>thriller filosófico e distópico brasileiro</strong>,
             uma <em>ficção política sobre a verdade e o poder da inteligência artificial</em>.
-            A obra atravessa o limite entre ética e sobrevivência,
-            entre o humano e a máquina, entre a moral e o medo.
+            A obra atravessa o limite entre ética e sobrevivência, entre o humano e a máquina, entre a moral e o medo.
           </p>
-
-          <p>
-            <strong>
-              Até onde você iria para proteger seu segredo?<br />
-              E se a única pergunta que pudesse salvá-lo fosse a que você jamais ousaria responder?
-            </strong>
-          </p>
+          <p><strong>Até onde você iria para proteger seu segredo?<br />E se a única pergunta que pudesse salvá-lo fosse a que você jamais ousaria responder?</strong></p>
         </div>
 
         <div class="callout">
@@ -391,44 +389,31 @@
         </div>
 
         <div class="actions">
-          <a
-            href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-primary"
-          >
+          <a href="https://www.amazon.com.br/Verdade-ou-Morte-Felipe-Mello-ebook/dp/B0FS7ZB38L/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             Comprar o romance distópico brasileiro na Amazon
           </a>
-
           <a href="#fragmentos" class="btn btn-outline">Ler fragmentos</a>
         </div>
       </div>
 
-      <!-- Imagem -->
       <div class="media">
         <img
           src="images/3.webp"
           alt="Capa do romance distópico brasileiro A Verdade ou a Morte de Felipe Mello"
-          loading="lazy"
-          decoding="async"
-          width="1200" height="1600"
+          loading="lazy" decoding="async" width="1200" height="1600"
         />
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       FRAGMENTOS
-  =========================================== -->
+  <!-- FRAGMENTOS -->
   <section id="fragmentos" class="section section-alt">
     <div class="container grid grid-2">
       <div class="media">
         <img
           src="images/4.webp"
           alt="Ambiente futurista do Fórum da Verdade — IA e julgamento digital"
-          loading="lazy"
-          decoding="async"
-          width="1200" height="800"
+          loading="lazy" decoding="async" width="1200" height="800"
         />
       </div>
 
@@ -437,42 +422,27 @@
 
         <article class="fragment">
           <h3>Fragmento I — O Início</h3>
-          <p>
-            “Eu nunca soube ao certo quando a verdade deixou de ser uma escolha.
-            Sei apenas que, quando percebi, ela já havia se tornado uma sentença.”
-          </p>
+          <p>“Eu nunca soube ao certo quando a verdade deixou de ser uma escolha. Sei apenas que, quando percebi, ela já havia se tornado uma sentença.”</p>
         </article>
 
         <article class="fragment">
           <h3>Fragmento II — A Filha</h3>
-          <p>
-            “Até que, aos 14 anos, tudo mudou. O afastamento veio como um golpe seco, sem aviso.
-            Um dia, ele chegou do trabalho, e Rafaela já não correu para encontrá-lo.”
-          </p>
+          <p>“Até que, aos 14 anos, tudo mudou. O afastamento veio como um golpe seco, sem aviso. Um dia, ele chegou do trabalho, e Rafaela já não correu para encontrá-lo.”</p>
         </article>
 
         <article class="fragment">
           <h3>Fragmento III — O Fórum da Verdade</h3>
-          <p>
-            “Apenas um segundo de silêncio, um desvio no olhar. Pequenos detalhes que, para uma máquina,
-            eram tão reveladores quanto uma confissão aberta.”
-          </p>
+          <p>“Apenas um segundo de silêncio, um desvio no olhar. Pequenos detalhes que, para uma máquina, eram tão reveladores quanto uma confissão aberta.”</p>
         </article>
 
         <div style="margin-top:24px; font-size:14px; color:#9ca3af;">
-          <p>
-            Esses fragmentos compõem o universo distópico do romance <em>A Verdade ou a Morte</em>,
-            um <strong>thriller filosófico brasileiro</strong> que explora as fronteiras entre
-            <em>verdade, inteligência artificial</em> e <em>justiça automatizada</em>.
-          </p>
+          <p>Esses fragmentos compõem o universo distópico do romance <em>A Verdade ou a Morte</em>, um <strong>thriller filosófico brasileiro</strong> que explora as fronteiras entre <em>verdade, inteligência artificial</em> e <em>justiça automatizada</em>.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       O UNIVERSO
-  =========================================== -->
+  <!-- O UNIVERSO -->
   <section id="universo" class="section section-alt">
     <div class="container">
       <h2 class="section-title">O Universo</h2>
@@ -480,31 +450,21 @@
       <div class="cards">
         <div class="card">
           <h3>Fórum da Verdade</h3>
-          <p>
-            Um sistema de <strong>justiça algorítmica</strong> que define quem mente e quem vive.
-            No Fórum, não há contexto: apenas dados, rostos e microexpressões interpretados pela
-            <em>IA soberana</em>.
-          </p>
+          <p>Um sistema de <strong>justiça algorítmica</strong> que define quem mente e quem vive. No Fórum, não há contexto: apenas dados, rostos e microexpressões interpretados pela <em>IA soberana</em>.</p>
         </div>
 
         <div class="card">
           <h3>Regra do Jogo</h3>
-          <p>
-            Cada cidadão faz uma pergunta por ano. Pode ser interrogado três vezes.
-            A mentira é punida com a morte — o preço da <strong>verdade institucionalizada</strong>.
-          </p>
+          <p>Cada cidadão faz uma pergunta por ano. Pode ser interrogado três vezes. A mentira é punida com a morte — o preço da <strong>verdade institucionalizada</strong>.</p>
         </div>
 
         <div class="card">
           <h3>Linhas de Destino</h3>
-          <p>
-            Daniel, Rafaela, Lupércio e Tomé percorrem um Brasil controlado por dados,
-            onde a moral foi substituída por <em>protocolos de veracidade</em>.
-          </p>
+          <p>Daniel, Rafaela, Lupércio e Tomé percorrem um Brasil controlado por dados, onde a moral foi substituída por <em>protocolos de veracidade</em>.</p>
         </div>
       </div>
 
-      <!-- O que vem aí (apenas aqui, sem duplicar) -->
+      <!-- O que vem aí -->
       <div class="narrow" style="margin-top:40px">
         <h3 class="section-title" style="font-size:28px">O que vem aí</h3>
         <ul style="list-style:none; display:grid; gap:12px; margin:8px 0 0 0; padding:0;">
@@ -515,42 +475,28 @@
       </div>
 
       <div style="margin-top:24px; font-size:14px; color:#9ca3af;">
-        <p>
-          Este universo literário se expande em novas obras que exploram temas como
-          <strong>governo autoritário, ética digital e vigilância total</strong>,
-          construindo uma <em>distopia filosófica e política</em> ambientada no Brasil de 2040.
-        </p>
+        <p>Este universo literário se expande em novas obras que exploram temas como <strong>governo autoritário, ética digital e vigilância total</strong>, construindo uma <em>distopia filosófica e política</em> ambientada no Brasil de 2040.</p>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       AUTOR
-  =========================================== -->
+  <!-- AUTOR -->
   <section id="autor" class="section">
     <div class="container grid grid-2">
       <div>
         <h2 class="section-title">Felipe Mello — Criador do Universo da Verdade</h2>
 
         <p class="prose">
-          <strong>Felipe Mello</strong> é um autor brasileiro que combina filosofia,
-          tecnologia e política em narrativas de alta tensão moral.
-          Em <em>A Verdade ou a Morte</em>, ele cria um Brasil onde a consciência é julgada
-          por máquinas e a mentira é crime capital.
+          <strong>Felipe Mello</strong> é um autor brasileiro que combina filosofia, tecnologia e política em narrativas de alta tensão moral.
+          Em <em>A Verdade ou a Morte</em>, ele cria um Brasil onde a consciência é julgada por máquinas e a mentira é crime capital.
         </p>
 
-        <p class="muted">
-          Sua escrita une <strong>ficção distópica e reflexão ética</strong>, abordando temas
-          como o poder dos algoritmos, a erosão da verdade e o dilema humano diante da
-          <em>inteligência artificial</em>.
-        </p>
+        <p class="muted">Sua escrita une <strong>ficção distópica e reflexão ética</strong>, abordando temas como o poder dos algoritmos, a erosão da verdade e o dilema humano diante da <em>inteligência artificial</em>.</p>
 
-        <p class="muted italic">
-          “Em um momento em que a polarização está demasiada, devemos defender a Verdade nas instituições.”
-        </p>
+        <p class="muted italic">“Em um momento em que a polarização está demasiada, devemos defender a Verdade nas instituições.”</p>
 
         <div class="actions">
-          <a href="https://www.linkedin.com/in/mellofli/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/mellofli/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
           <a href="#novidades" class="btn btn-primary">Assinar novidades</a>
         </div>
       </div>
@@ -559,46 +505,52 @@
         <img
           src="images/684790ab-b9d8-470c-ad21-264538db0df5.webp"
           alt="Retrato do escritor brasileiro Felipe Mello, autor do romance distópico A Verdade ou a Morte"
-          class="author-photo"
-          loading="lazy"
-          decoding="async"
-          width="1200" height="1600"
+          class="author-photo" loading="lazy" decoding="async" width="1200" height="1600"
         />
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       NOVIDADES
-  =========================================== -->
+  <!-- ECOSSISTEMA & REFLEXÕES (curadoria) -->
+  <section id="ecosistema" class="section section-alt">
+    <div class="container narrow">
+      <h2 class="section-title">O Fórum se Expande</h2>
+      <p class="muted">Leituras, reflexões e vozes que ecoam o tema da Verdade — curadoria que amplia o universo filosófico e literário de <em>A Verdade ou a Morte</em>.</p>
+
+      <div class="cards" style="margin-top:24px">
+        <div class="card">
+          <h3>Publicações do Autor</h3>
+          <ul class="link-list">
+            <li><a href="https://substack.com/@fmello1?" target="_blank" rel="noopener noreferrer">Substack — Reflexão: “A Verdade como Sentença”</a></li>
+             <li><a href="https://www.linkedin.com/in/mellofli/" target="_blank" rel="noopener noreferrer">LinkedIn — Ensaios e publicações</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Leituras Recomendadas</h3>
+          <ul class="link-list">
+            <li><a href="https://filosofianaescola.com/" target="_blank" rel="noopener noreferrer">Filosofia na Escola — Educação, pensamento e cidadania</a></li>
+            <li><a href="https://helkein.com.br/" target="_blank" rel="noopener noreferrer">Helkein — Filosofia, ética e política contemporânea</a></li>
+            <li><a href="https://filosofiapop.com.br/" target="_blank" rel="noopener noreferrer">Filosofia Pop — Diálogos sobre sociedade e cultura</a></li>
+            <li><a href="https://www.amazon.com.br/gp/browse.html?node=6740748011" target="_blank" rel="noopener noreferrer">Amazon Livros — Clássicos e obras de filosofia</a></li>
+          </ul>
+        </div>
+
+        <p class="tiny muted" style="margin-top:24px">🔗 Curadoria independente — conteúdos de terceiros permanecem sob seus respectivos direitos.</p>
+    </div>
+  </section>
+
+  <!-- NOVIDADES -->
   <section id="novidades" class="section section-alt">
     <div class="container narrow center">
       <h2 class="section-title">Novidades &amp; Lançamentos</h2>
+      <p class="muted">Cadastre seu e-mail para receber trechos inéditos, pré-venda e eventos (1x por mês, sem spam).</p>
 
-      <p class="muted">
-        Cadastre seu e-mail para receber trechos inéditos, pré-venda e eventos (1x por mês, sem spam).
-      </p>
-
-      <form
-        id="newsletter-form"
-        action="https://formspree.io/f/mblpgnnn"
-        method="POST"
-        class="newsletter-form"
-        novalidate
-      >
+      <form id="newsletter-form" action="https://formspree.io/f/mblpgnnn" method="POST" class="newsletter-form" novalidate>
         <div class="newsletter-fields">
-          <input
-            id="email-news"
-            name="email"
-            required
-            type="email"
-            placeholder="seu@email.com"
-            inputmode="email"
-            autocomplete="email"
-          />
+          <input id="email-news" name="email" required type="email" placeholder="seu@email.com" inputmode="email" autocomplete="email" />
           <button type="submit" class="btn btn-primary">Participar</button>
         </div>
-
         <input type="hidden" name="_subject" value="Novo cadastro na newsletter — A Verdade ou a Morte" />
         <input type="hidden" name="origem" value="newsletter_universo_averdadeouamorte" />
       </form>
@@ -607,9 +559,7 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       RODAPÉ
-  =========================================== -->
+  <!-- RODAPÉ -->
   <footer class="site-footer">
     <p>© <span id="ano"></span> Universo A Verdade ou a Morte — Felipe Mello</p>
   </footer>
@@ -618,6 +568,7 @@
   <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
 
 
 
