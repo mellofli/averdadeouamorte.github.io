@@ -24,7 +24,7 @@ h1{font-size:clamp(2.3rem,7vw,4rem);line-height:1.1;margin:.5rem 0 1rem;color:#f
 .choice.selected{border-color:#9fe3e9;background:#1b505a}.actions{display:flex;flex-wrap:wrap;gap:12px}.primary,.buy{background:#176878;border-color:#176878;font-weight:750;text-align:center}.primary:disabled{opacity:.5;cursor:not-allowed}
 .buy{display:inline-block;text-decoration:none;margin-top:12px}.progress{font-size:.92rem;color:#a9c2cd}.hidden{display:none!important}.fine{font-size:.85rem;color:#b6c1cc}
 .result-title{color:#9fe3e9}.divider{height:1px;background:#2d4652;margin:26px 0}
-</style></head>
+</style><script src="/consentimento.js" defer></script></head>
 <body><main>
 <header><a class="brand" href="/">A VERDADE OU A MORTE</a><a href="/">Voltar ao universo</a></header>
 <section id="intro"><p class="eyebrow">Experiência narrativa • Brasil, 2040</p>
@@ -41,8 +41,8 @@ h1{font-size:clamp(2.3rem,7vw,4rem);line-height:1.1;margin:.5rem 0 1rem;color:#f
 <div class="actions"><button id="share" class="primary" type="button">Compartilhar resultado</button><button id="retry" type="button">Tentar novamente</button></div>
 <div class="divider"></div><h2>Você aceitaria viver sob esse julgamento?</h2>
 <p>Conheça a história completa de <strong>A Verdade ou a Morte</strong>, romance distópico de Felipe Mello.</p>
-<a class="buy" href="https://www.amazon.com.br/dp/B0FS7ZB38L?utm_source=site&utm_medium=forum&utm_campaign=forum_da_verdade" target="_blank" rel="noopener noreferrer">Conhecer o livro na Amazon ↗</a></section>
-<footer class="fine">Uma experiência de ficção e entretenimento • <a href="/">Site oficial do livro</a></footer>
+<a class="buy" id="forum-buy" href="https://www.amazon.com.br/dp/B0FS7ZB38L?utm_source=site&utm_medium=forum&utm_campaign=forum_da_verdade" target="_blank" rel="noopener noreferrer">Conhecer o livro na Amazon ↗</a></section>
+<footer class="fine">Uma experiência de ficção e entretenimento • <a href="/">Site oficial do livro</a> • <a href="/privacidade.html">Privacidade</a></footer>
 </main>
 <script>
 (()=>{'use strict';
@@ -62,9 +62,10 @@ const $=id=>document.getElementById(id);
 let step=0,scores=[0,0,0],selected=-1,verdict=0;
 function show(id){for(const n of ['intro','quiz','result'])$(n).classList.toggle('hidden',n!==id);}
 function reset(){step=0;scores=[0,0,0];selected=-1;$('share').textContent='Compartilhar resultado';show('intro');$('start').focus();}
-function render(){selected=-1;$('next').disabled=true;$('progress').textContent='Questão '+(step+1)+' de '+questions.length;$('question').textContent=questions[step][0];$('answers').replaceChildren();questions[step][1].forEach((answer,i)=>{const b=document.createElement('button');b.type='button';b.className='choice';b.textContent=answer;b.addEventListener('click',()=>{selected=i;[...$('answers').children].forEach((e,j)=>{e.classList.toggle('selected',j===i);e.setAttribute('aria-pressed',j===i?'true':'false');});$('next').disabled=false;});$('answers').append(b);});show('quiz');$('question').setAttribute('tabindex','-1');$('question').focus();}
+function render(){selected=-1;$('next').disabled=true;$('progress').textContent='Questão '+(step+1)+' de '+questions.length;$('question').textContent=questions[step][0];$('answers').replaceChildren();questions[step][1].forEach((answer,i)=>{const b=document.createElement('button');b.type='button';b.className='choice';b.textContent=answer;b.addEventListener('click',()=>{selected=i;[...$('answers').children].forEach((e,j)=>{e.classList.toggle('selected',j===i);e.setAttribute('aria-pressed',j===i?'true':'false');});$('next').disabled=false;});$('answers').append(b);});show('quiz');if(typeof window.siteTrack==='function' && step===0)window.siteTrack('forum_start');$('question').setAttribute('tabindex','-1');$('question').focus();}
 $('start').addEventListener('click',render);$('restart').addEventListener('click',reset);$('retry').addEventListener('click',reset);
-$('next').addEventListener('click',()=>{if(selected<0)return;scores[selected]++;step++;if(step<questions.length){render();return;}verdict=scores.indexOf(Math.max(...scores));$('share').textContent='Compartilhar resultado';$('result-title').textContent=outcomes[verdict][0];$('result-body').textContent=outcomes[verdict][1];show('result');$('result-title').focus();});
-$('share').addEventListener('click',async()=>{const message='Meu veredito no Fórum da Verdade: '+outcomes[verdict][0]+'. Qual seria o seu?';const url='https://averdadeouamorte.com/forum-da-verdade.html';try{if(navigator.share){await navigator.share({title:'Fórum da Verdade',text:message,url});return;}if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(message+' '+url);$('share').textContent='Link e resultado copiados ✓';return;}}catch(e){if(e.name==='AbortError')return;}window.prompt('Copie e compartilhe:',message+' '+url);});
+$('next').addEventListener('click',()=>{if(selected<0)return;scores[selected]++;step++;if(step<questions.length){render();return;}verdict=scores.indexOf(Math.max(...scores));$('share').textContent='Compartilhar resultado';$('result-title').textContent=outcomes[verdict][0];$('result-body').textContent=outcomes[verdict][1];show('result');if(typeof window.siteTrack==='function')window.siteTrack('forum_complete',{verdict:outcomes[verdict][0]});$('result-title').focus();});
+$('share').addEventListener('click',async()=>{if(typeof window.siteTrack==='function')window.siteTrack('forum_share');const message='Meu veredito no Fórum da Verdade: '+outcomes[verdict][0]+'. Qual seria o seu?';const url='https://averdadeouamorte.com/forum-da-verdade.html';try{if(navigator.share){await navigator.share({title:'Fórum da Verdade',text:message,url});return;}if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(message+' '+url);$('share').textContent='Link e resultado copiados ✓';return;}}catch(e){if(e.name==='AbortError')return;}window.prompt('Copie e compartilhe:',message+' '+url);});
+$('forum-buy').addEventListener('click',()=>{if(typeof window.siteTrack==='function')window.siteTrack('click_amazon',{event_category:'outbound',book_asin:'B0FS7ZB38L',source:'forum'});});
 })();
 </script></body></html>
