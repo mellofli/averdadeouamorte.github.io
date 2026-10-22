@@ -20,7 +20,7 @@ function enable(){
  })(window,document,'ttq');
 }
 window.siteTrack=function(eventName,params){if(choice==='accepted'&&typeof window.gtag==='function')window.gtag('event',eventName,params||{});};
-function setChoice(value){choice=value;try{localStorage.setItem(key,value);}catch(e){}if(value==='accepted')enable();document.getElementById('privacy-banner')?.remove();}
+function setChoice(value){var previous=gaReady;choice=value;try{localStorage.setItem(key,value);}catch(e){}if(value==='accepted')enable();document.getElementById('privacy-banner')?.remove();if(value==='rejected'&&previous)window.location.reload();}
 function banner(){
  if(choice==='accepted'){enable();return;}
  if(choice==='rejected')return;
