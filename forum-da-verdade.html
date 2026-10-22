@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fórum da Verdade | Você sobreviveria em 2040?</title>
+<meta name="description" content="Entre no Fórum da Verdade: uma experiência ficcional de dilemas morais inspirada no livro A Verdade ou a Morte, de Felipe Mello.">
+<link rel="canonical" href="https://averdadeouamorte.com/forum-da-verdade.html">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="O Fórum da Verdade convocou você.">
+<meta property="og:description" content="Em 2040, uma resposta pode decidir seu destino. Teste seus dilemas morais nesta experiência literária.">
+<meta property="og:url" content="https://averdadeouamorte.com/forum-da-verdade.html">
+<meta property="og:image" content="https://averdadeouamorte.com/images/2.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0f1f">
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#e5edf0;background:#0a0f1f}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 0%,#123b48,#0a0f1f 55%);line-height:1.6}
+main{max-width:720px;margin:auto;padding:30px 20px 72px}a{color:#9fe3e9}header{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:56px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.06em;text-decoration:none;color:white}.eyebrow{color:#83cbd5;text-transform:uppercase;letter-spacing:.2em;font-size:.76rem;font-weight:750}
+h1{font-size:clamp(2.3rem,7vw,4rem);line-height:1.1;margin:.5rem 0 1rem;color:#fff}h2{font-size:clamp(1.5rem,4vw,2rem);line-height:1.25;color:#fff}
+.lead{font-size:1.17rem;color:#c8d8dd}.panel{border:1px solid #335763;border-radius:18px;background:#0d1928;padding:clamp(20px,5vw,36px);box-shadow:0 16px 40px #0005;margin:32px 0}
+.muted{color:#a6b5bf}.answers{display:grid;gap:12px;margin:24px 0}.choice,button,.buy{font:inherit;border:1px solid #506672;border-radius:12px;padding:14px 18px;background:#152d38;color:white;cursor:pointer;text-align:left}
+.choice:hover,.choice:focus-visible,button:hover,button:focus-visible,.buy:hover,.buy:focus-visible{border-color:#9fe3e9;outline-offset:3px}
+.choice.selected{border-color:#9fe3e9;background:#1b505a}.actions{display:flex;flex-wrap:wrap;gap:12px}.primary,.buy{background:#176878;border-color:#176878;font-weight:750;text-align:center}.primary:disabled{opacity:.5;cursor:not-allowed}
+.buy{display:inline-block;text-decoration:none;margin-top:12px}.progress{font-size:.92rem;color:#a9c2cd}.hidden{display:none!important}.fine{font-size:.85rem;color:#b6c1cc}
+.result-title{color:#9fe3e9}.divider{height:1px;background:#2d4652;margin:26px 0}
+</style></head>
+<body><main>
+<header><a class="brand" href="/">A VERDADE OU A MORTE</a><a href="/">Voltar ao universo</a></header>
+<section id="intro"><p class="eyebrow">Experiência narrativa • Brasil, 2040</p>
+<h1>O Fórum da Verdade convocou você.</h1>
+<p class="lead">E se uma inteligência artificial decidisse quem merece viver com base nas respostas de cada pessoa?</p>
+<p>Enfrente cinco dilemas. Descubra qual sentença <em>ficcional</em> combina com suas escolhas e compartilhe seu resultado.</p>
+<button class="primary" id="start" type="button">Aceitar a convocação →</button>
+<p class="fine">Simulação literária inspirada no romance de Felipe Mello. Não identifica mentiras, não faz diagnóstico e não envia suas respostas a um servidor.</p></section>
+<section id="quiz" class="panel hidden" aria-live="polite"><p class="progress" id="progress"></p><h2 id="question"></h2>
+<div id="answers" class="answers" role="group" aria-label="Respostas possíveis"></div>
+<div class="actions"><button id="next" type="button" class="primary" disabled>Continuar →</button><button id="restart" type="button">Recomeçar</button></div></section>
+<section id="result" class="panel hidden" aria-live="polite"><p class="eyebrow">Veredito narrativo</p><h2 id="result-title" class="result-title" tabindex="-1"></h2><p id="result-body" class="lead"></p>
+<p class="fine">O resultado é uma interpretação ficcional de um roteiro interativo. Nenhuma conclusão real sobre sua personalidade ou honestidade é produzida.</p>
+<div class="actions"><button id="share" class="primary" type="button">Compartilhar resultado</button><button id="retry" type="button">Tentar novamente</button></div>
+<div class="divider"></div><h2>Você aceitaria viver sob esse julgamento?</h2>
+<p>Conheça a história completa de <strong>A Verdade ou a Morte</strong>, romance distópico de Felipe Mello.</p>
+<a class="buy" href="https://www.amazon.com.br/dp/B0FS7ZB38L?utm_source=site&utm_medium=forum&utm_campaign=forum_da_verdade" target="_blank" rel="noopener noreferrer">Conhecer o livro na Amazon ↗</a></section>
+<footer class="fine">Uma experiência de ficção e entretenimento • <a href="/">Site oficial do livro</a></footer>
+</main>
+<script>
+(()=>{'use strict';
+const questions=[
+['Você descobre um erro grave cometido por alguém que ama. O Fórum pede seu depoimento.',['Revelaria tudo, mesmo que destruísse essa pessoa.','Tentaria resolver em particular antes de falar.','Recusaria julgar sem conhecer toda a história.']],
+['Uma máquina revela uma verdade íntima sobre você. O país inteiro poderá vê-la.',['Aceitaria: a transparência deve valer para todos.','Exigiria o direito de manter minha intimidade.','Questionaria como a máquina chegou à conclusão.']],
+['Seu amigo diz uma mentira para proteger um inocente. O Fórum exige uma decisão.',['Condenaria a mentira, mesmo com boa intenção.','Defenderia a intenção de proteger alguém.','Pediria provas e contexto antes de decidir.']],
+['O sistema parece infalível, mas um acusado insiste que ele errou.',['Confiaria na decisão estabelecida.','Suspenderia a sentença para ouvi-lo.','Exigiria auditoria independente do sistema.']],
+['Agora o Fórum pergunta: o que é mais importante?',['Uma regra igual para todos.','A compaixão diante de cada história.','O direito de duvidar do próprio julgador.']]
+];
+const outcomes=[
+['O Guardião da Regra','Você escolheu proteger a coerência das regras. Mas, quando a lei não admite exceções, quem protege o humano?'],
+['A Voz da Compaixão','Você privilegiou as pessoas por trás dos fatos. No Fórum, até um gesto de misericórdia pode parecer suspeito.'],
+['A Consciência Dissidente','Você exigiu contexto, prova e espaço para duvidar. Em um mundo que trata decisões automáticas como verdades absolutas, questionar já é um ato de coragem.']
+];
+const $=id=>document.getElementById(id);
+let step=0,scores=[0,0,0],selected=-1,verdict=0;
+function show(id){for(const n of ['intro','quiz','result'])$(n).classList.toggle('hidden',n!==id);}
+function reset(){step=0;scores=[0,0,0];selected=-1;$('share').textContent='Compartilhar resultado';show('intro');$('start').focus();}
+function render(){selected=-1;$('next').disabled=true;$('progress').textContent='Questão '+(step+1)+' de '+questions.length;$('question').textContent=questions[step][0];$('answers').replaceChildren();questions[step][1].forEach((answer,i)=>{const b=document.createElement('button');b.type='button';b.className='choice';b.textContent=answer;b.addEventListener('click',()=>{selected=i;[...$('answers').children].forEach((e,j)=>{e.classList.toggle('selected',j===i);e.setAttribute('aria-pressed',j===i?'true':'false');});$('next').disabled=false;});$('answers').append(b);});show('quiz');$('question').setAttribute('tabindex','-1');$('question').focus();}
+$('start').addEventListener('click',render);$('restart').addEventListener('click',reset);$('retry').addEventListener('click',reset);
+$('next').addEventListener('click',()=>{if(selected<0)return;scores[selected]++;step++;if(step<questions.length){render();return;}verdict=scores.indexOf(Math.max(...scores));$('share').textContent='Compartilhar resultado';$('result-title').textContent=outcomes[verdict][0];$('result-body').textContent=outcomes[verdict][1];show('result');$('result-title').focus();});
+$('share').addEventListener('click',async()=>{const message='Meu veredito no Fórum da Verdade: '+outcomes[verdict][0]+'. Qual seria o seu?';const url='https://averdadeouamorte.com/forum-da-verdade.html';try{if(navigator.share){await navigator.share({title:'Fórum da Verdade',text:message,url});return;}if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(message+' '+url);$('share').textContent='Link e resultado copiados ✓';return;}}catch(e){if(e.name==='AbortError')return;}window.prompt('Copie e compartilhe:',message+' '+url);});
+})();
+</script></body></html>
