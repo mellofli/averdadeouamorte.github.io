@@ -1,29 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGKENMSYKV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-MGKENMSYKV');
-  </script>
-
-  
-<!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-
-
-  ttq.load('D5NOVSJC77U4HM3KJPA0');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
+  <script src="/consentimento.js" defer></script>
 
   <!-- =============================
        META BÁSICO
@@ -497,6 +475,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
   <!-- RODAPÉ -->
   <footer class="site-footer">
     <p>© <span id="ano"></span> Universo A Verdade ou a Morte — Felipe Mello</p>
+    <p><a href="/privacidade.html">Privacidade e preferências de medição</a></p>
   </footer>
 
   <script>
@@ -505,8 +484,8 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     document.querySelectorAll('a[href*="amazon.com.br/"]').forEach(function(link){
       if (!link.href.includes('/dp/B0FS7ZB38L') && !link.href.includes('/ebook/dp/B0FS7ZB38L')) return;
       link.addEventListener('click', function(){
-        if (typeof window.gtag === 'function') {
-          window.gtag('event','click_amazon',{event_category:'outbound',link_url:link.href,book_asin:'B0FS7ZB38L'});
+        if (typeof window.siteTrack === 'function') {
+          window.siteTrack('click_amazon',{event_category:'outbound',link_url:link.href,book_asin:'B0FS7ZB38L'});
         }
       });
     });
